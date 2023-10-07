@@ -135,5 +135,171 @@ Les tableaux et les listes permettent de stocker des données de manière organi
 
 C'est le lot de 5 concepts avec des définitions, des exemples de code et des commentaires, formaté en Markdown. Si vous souhaitez en savoir plus sur les cinq concepts suivants ou si vous avez des questions spécifiques, n'hésitez pas à demander !
 
+6. Encapsulation
+Définition : L'encapsulation est le principe de regrouper les données (variables) et les méthodes (fonctions) qui les manipulent dans une seule unité appelée classe.
+
+java
+Copy code
+class Personne {
+    private String nom;
+    private int age;
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+Commentaire : L'encapsulation permet de contrôler l'accès aux données en les rendant privées et d'exposer des méthodes publiques pour y accéder, assurant ainsi la sécurité et la cohérence des données.
+
+7. Héritage
+Définition : L'héritage permet à une classe (sous-classe) de hériter des propriétés et des méthodes d'une autre classe (super-classe). Cela favorise la réutilisation du code.
+
+java
+Copy code
+class Animal {
+    void manger() {
+        System.out.println("Cet animal mange de la nourriture.");
+    }
+}
+
+class Chien extends Animal {
+    void aboyer() {
+        System.out.println("Le chien aboie.");
+    }
+}
+Commentaire : Les sous-classes héritent des comportements de la classe parent, permettant d'étendre et de spécialiser le comportement.
+
+8. Polymorphisme
+Définition : C'est la capacité d'une classe à prendre différentes formes. En Java, cela peut être réalisé par le biais des classes et des interfaces.
+
+java
+Copy code
+class Forme {
+    void dessiner() {
+        System.out.println("Dessiner une forme.");
+    }
+}
+
+class Cercle extends Forme {
+    void dessiner() {
+        System.out.println("Dessiner un cercle.");
+    }
+}
+
+class Carre extends Forme {
+    void dessiner() {
+        System.out.println("Dessiner un carré.");
+    }
+}
+Commentaire : Le polymorphisme permet à une variable d'un type de classe parent d'accepter des objets de classes enfants différentes, permettant ainsi de réaliser des opérations spécifiques à chaque classe.
+
+9. Abstraction
+Définition : L'abstraction consiste à masquer les détails d'implémentation et à montrer uniquement les fonctionnalités nécessaires de l'objet.
+
+java
+Copy code
+abstract class Forme {
+    abstract void dessiner();
+}
+
+class Cercle extends Forme {
+    void dessiner() {
+        System.out.println("Dessiner un cercle.");
+    }
+}
+Commentaire : Les classes abstraites permettent de définir des méthodes sans les implémenter, laissant les sous-classes concrètes fournir une implémentation spécifique.
+
+10. Interfaces
+Définition : Une interface est une collection de méthodes abstraites (sans implémentation) qui peuvent être implémentées par des classes. Elle permet d'atteindre l'abstraction multiple.
+
+java
+Copy code
+interface Animal {
+    void manger();
+    void dormir();
+}
+
+class Chien implements Animal {
+    public void manger() {
+        System.out.println("Le chien mange de la nourriture.");
+    }
+
+    public void dormir() {
+        System.out.println("Le chien dort.");
+    }
+}
+Commentaire : Les interfaces définissent des contrats que les classes doivent suivre, permettant ainsi de définir des comportements communs à plusieurs classes.
+
+11. Gestion des Exceptions:
+Définition : La gestion des exceptions permet de gérer les situations exceptionnelles qui peuvent survenir pendant l'exécution d'un programme. Cela inclut la capture et le traitement des erreurs pour éviter les interruptions inattendues du programme.
+
+Exemple de Code :
+
+java
+Copy code
+try {
+    // Code susceptible de provoquer une exception
+} catch (Exception e) {
+    // Traitement de l'exception
+    System.out.println("Une exception s'est produite : " + e.getMessage());
+} finally {
+    // Bloc de code exécuté quel que soit le résultat
+}
+Commentaire :
+
+La gestion des exceptions est cruciale pour garantir la robustesse des programmes, en traitant les erreurs de manière contrôlée et en évitant les plantages.
+
+12. Packages et Modules:
+Définition : Les packages (ou modules en Java 9 et versions ultérieures) sont des mécanismes permettant d'organiser les classes en groupes logiques et de contrôler leur visibilité. Cela facilite la gestion des grands projets en les divisant en modules réutilisables.
+
+Exemple de Code :
+
+java
+Copy code
+package com.example.mypackage;
+
+public class MaClasse {
+    // Code de la classe
+}
+Commentaire :
+
+Les packages/modules aident à organiser le code, à éviter les conflits de noms et à améliorer la lisibilité et la maintenance du code source.
+
+13. Expressions Régulières (Regex):
+Définition : Les expressions régulières sont des motifs de texte utilisés pour effectuer des recherches et des manipulations de chaînes de caractères complexes. Elles permettent de vérifier si une chaîne de caractères correspond à un certain format ou de rechercher des motifs spécifiques dans une chaîne.
+
+Exemple de Code :
+
+java
+Copy code
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+String texte = "Bonjour, mon numéro de téléphone est 123-456-7890.";
+String regex = "\\d{3}-\\d{3}-\\d{4}";
+
+Pattern pattern = Pattern.compile(regex);
+Matcher matcher = pattern.matcher(texte);
+
+if (matcher.find()) {
+    System.out.println("Numéro de téléphone trouvé : " + matcher.group(0));
+}
+Commentaire :
+
+Les expressions régulières sont puissantes pour les opérations de recherche et de validation de chaînes de caractères complexes.
+
+14. Gestion de la Mémoire (Garbage Collection):
+Définition : La gestion automatique de la mémoire en Java est effectuée par le ramasse-miettes (garbage collector), un processus qui récupère la mémoire utilisée par les objets non référencés, libérant ainsi les ressources inutilisées et évitant les fuites de mémoire.
+
+Exemple de Code :
+
+Aucun code spécifique n'est nécessaire, car la gestion de la mémoire est gérée automatiquement par le garbage collector en Java.
+
+Commentaire :
+
+La gestion automatique de la mémoire soulage les développeurs de la nécessité de gérer manuellement l'allocation et la libération de la mémoire, améliorant ainsi la productivité et la fiabilité du code.
 
 
