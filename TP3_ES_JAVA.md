@@ -6,7 +6,8 @@
 Comprendre les concepts de base de l'E/S en Java
 Savoir lire et écrire des fichiers texte
 Savoir lire et écrire des fichiers binaires
-Exercice 1 : Lecture d'un fichier texte
+
+### Exercice 1 : Lecture d'un fichier texte
 
 Écrivez un programme Java qui lit le contenu d'un fichier texte et l'affiche sur la console.
 
@@ -20,7 +21,7 @@ Une fois le fichier ouvert, nous pouvons utiliser la méthode read() pour lire l
 
 Pour fermer le fichier, nous utilisons la méthode close() de la classe FileReader.
 
-### Exemple de code
+Exemple de code
 
 Java
 import java.io.File;
