@@ -235,6 +235,144 @@ La variable salaire est déclarée de type double et affectée à la valeur 1000
 Les calculs sont effectués
 ```
 
+## TP 5 : Saisie d'un nom et affichage d'un message de bienvenue
+
+
+
+```Java
+import java.util.Scanner;
+
+public class TP5 {
+
+    public static void main(String[] args) {
+
+        /*
+        Ce programme demande à l'utilisateur de saisir son nom et affiche un message de bienvenue.
+
+        Un objet `Scanner` est créé pour lire l'entrée utilisateur.
+
+        La méthode `nextLine()` est utilisée pour lire une chaîne de caractères de l'entrée utilisateur.
+
+        La valeur saisie par l'utilisateur est affectée à la variable `nom`.
+
+        Un message de bienvenue est affiché à l'écran avec le nom saisi par l'utilisateur.
+
+        L'objet `Scanner` est fermé pour libérer les ressources utilisées.
+        */
+
+        // Déclaration des variables
+        String nom;
+
+        // Création d'un objet Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Saisie de l'entrée utilisateur
+        System.out.println("Entrez votre nom : ");
+        nom = scanner.nextLine();
+
+        // Affichage du message de bienvenue
+        System.out.println("Bienvenue, " + nom + " !");
+
+        // Fermeture de l'objet Scanner
+        scanner.close();
+
+    }
+}
+```
+
+**Sortie console**
+
+```
+Entrez votre nom : John Doe
+Bienvenue, John Doe !
+```
+
+**Explications**
+```
+Un objet Scanner est créé pour lire l'entrée utilisateur.
+La méthode nextLine() est utilisée pour lire une chaîne de caractères de l'entrée utilisateur.
+La valeur saisie par l'utilisateur est affectée à la variable nom.
+Un message de bienvenue est affiché à l'écran avec le nom saisi par l'utilisateur.
+L'objet Scanner est fermé pour libérer les ressources utilisées.
+```
+
+## TP 6 : Saisie d'une note et affichage d'une mention
+
+```Java
+import java.util.Scanner;
+
+public class TP6 {
+
+    public static void main(String[] args) {
+
+        /*
+        Ce programme demande à l'utilisateur de saisir une note et affiche la mention correspondante.
+
+        Un objet `Scanner` est créé pour lire l'entrée utilisateur.
+
+        La méthode `nextFloat()` est utilisée pour lire un nombre réel de l'entrée utilisateur.
+
+        La valeur saisie par l'utilisateur est affectée à la variable `note`.
+
+        La mention est calculée en fonction de la valeur de la variable `note`.
+
+        La mention est affichée à l'écran.
+
+        L'objet `Scanner` est fermé pour libérer les ressources utilisées.
+        */
+
+        // Déclaration des variables
+        float note;
+        String mention;
+
+        // Création d'un objet Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Saisie de l'entrée utilisateur
+        System.out.println("Entrez une note : ");
+        note = scanner.nextFloat();
+
+        // Calcul de la mention
+        if (note >= 12) {
+            mention = "Très bien";
+        } else if (note >= 10) {
+            mention = "Bien";
+        } else if (note >= 8) {
+            mention = "Assez bien";
+        } else if (note >= 6) {
+            mention = "Passable";
+        } else {
+            mention = "Insuffisant";
+        }
+
+        // Affichage de la mention
+        System.out.println("La mention est de " + mention);
+
+        // Fermeture de l'objet Scanner
+        scanner.close();
+
+    }
+}
+```
+
+**Sortie console**
+
+```
+Entrez une note : 10
+La mention est de Bien
+```
+
+** Explications **
+
+```
+Un objet Scanner est créé pour lire l'entrée utilisateur.
+La méthode nextFloat() est utilisée pour lire un nombre réel de l'entrée utilisateur.
+La valeur saisie par l'utilisateur est affectée à la variable note.
+La mention est calculée en fonction de la valeur de la variable note.
+La mention est affichée à l'écran.
+L'objet Scanner est fermé pour libérer les ressources utilisées.
+```
+
 ## Synthèse 1  Code hors POO
 
 ```java
