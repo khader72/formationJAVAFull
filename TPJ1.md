@@ -408,7 +408,7 @@ La mention est affichée à l'écran.
 L'objet Scanner est fermé pour libérer les ressources utilisées.
 ```
 
-## Synthèse 1  Code hors POO
+## Synthèse 1  Code : Syntaxe de Base
 
 ```java
 public class HelloWorld {
@@ -734,3 +734,5 @@ Utilisation de Scanner pour les entrées claviers
 ```
 
 Ce TP peut être adapté en fonction des besoins. Par exemple, on peut ajouter des méthodes supplémentaires pour calculer d'autres informations, telles que le montant des impôts ou la durée des vacances.
+
+## Synthèse 2  : POO
