@@ -465,7 +465,136 @@ CREATE TABLE products (
     name VARCHAR(255),
     price DECIMAL(10, 2)
 );
+
+Gestion des données avec Spring Boot
+Spring Boot fournit des fonctionnalités pour gérer les données, telles que Spring Data JPA.
+
+Spring Data JPA est une API pour accéder aux données dans les bases de données relationnelles.
+
+Spring Data JPA
+Spring Data JPA fournit une abstraction sur les bases de données relationnelles.
+
+Cela permet aux développeurs de se concentrer sur l'écriture de code métier sans avoir à se soucier des détails de la base de données.
+
+Spring Data JPA fournit des fonctionnalités pour les opérations CRUD (Create, Read, Update, Delete) sur les données.
+
+Intégration d'une base de données
+Pour intégrer une base de données avec Spring Boot, vous devez ajouter la dépendance appropriée à votre projet Maven ou Gradle.
+
+Pour intégrer une base de données MySQL, vous pouvez utiliser la dépendance mysql-connector-java.
+
+Pour intégrer une base de données H2, vous pouvez utiliser la dépendance h2.
+
+Exemple
+Voici un exemple d'utilisation de Spring Data JPA pour accéder à une base de données MySQL :
+
+Java
+@Entity
+public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String name;
+
+    private Double price;
+
+    public Product() {
+    }
+
+    public Product(String name, Double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+}
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Integer> {
+}
+
+@RestController
+public class ProductController {
+
+    @Autowired
+    private ProductRepository productRepository;
+
+    @GetMapping("/products")
+    public List<Product> getAllProducts() {
+        return productRepository.findAll();
+    }
+
+    @PostMapping("/products")
+    public Product createProduct(@RequestBody Product product) {
+        return productRepository.save(product);
+    }
+}
 Utilisez le code avec précaution. En savoir plus
+Ce code définit une entité Product pour représenter un produit.
+
+Il définit également une interface ProductRepository qui étend l'interface JpaRepository.
+
+L'interface JpaRepository fournit des méthodes pour accéder aux données de la base de données.
+
+Le contrôleur ProductController utilise l'interface ProductRepository pour accéder aux données de la base de données.
+
+La méthode getAllProducts() renvoie la liste de tous les produits.
+
+La méthode createProduct() crée un nouveau produit et l'enregistre dans la base de données.
+
+Pour tester ce code, vous pouvez exécuter la commande suivante :
+
+curl -X POST -H "Content-Type: application/json" -d '{"name": "T-shirt", "price": 10.00}' http://localhost:8080/products
+
+Cette commande créera un nouveau produit avec le nom "T-shirt" et le prix 10,00 €.
+
+Pour afficher la liste de tous les produits, vous pouvez exécuter la commande suivante :
+
+curl http://localhost:8080/products
+Cette commande renverra la réponse suivante :
+
+[
+    {
+        "id": 1,
+        "name": "T-shirt",
+        "price": 10.00
+    }
+]
+Liens utiles
+Spring Data JPA: https://spring.io/projects/spring-data-jpa
+MySQL: https://www.mysql.com/
+H2: https://www.h2database.com/
+Sources
+github.com/mohammedatef555/jpa-hibernate-fundmentals
+github.com/GabrielTonhatti/curso-angular
+dzone.com/articles/integration-spring-mvc-and
+github.com/yugabyte/orm-examplessoumis à licence (Apache - 2.0)
+github.com/shangan23/ecommerce-apisoumis à licence (Apache - 2.0)
+
 Diapositive 15
 
 Exercice
