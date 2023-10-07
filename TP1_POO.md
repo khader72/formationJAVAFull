@@ -582,3 +582,155 @@ Exemple d'utilisation
 
 Dans l'exemple de code, l'interface Vehicule définit le comportement de base d'un véhicule.
 Les classes Voiture et Moto implémentent l'interface Vehicule pour fournir des implementations spécifiques de ce comportement.
+
+
+### Concept 10 : Packages
+
+Un package est un regroupement de classes et d'interfaces.
+
+Exemple de code
+
+package vehicules;
+
+public class Voiture {
+
+    // Propriétés
+    private String marque;
+    private String modele;
+
+    // Constructeur
+    public Voiture(String marque, String modele) {
+        this.marque = marque;
+        this.modele = modele;
+    }
+
+    // Méthodes
+    public void rouler() {
+        System.out.println("La voiture roule.");
+    }
+
+    public void freiner() {
+        System.out.println("La voiture freine.");
+    }
+
+}
+
+public class Moto implements Vehicule {
+
+    // Propriétés
+    private String marque;
+    private String modele;
+
+    // Constructeur
+    public Moto(String marque, String modele) {
+        this.marque = marque;
+        this.modele = modele;
+    }
+
+    // Méthodes implémentées
+    @Override
+    public void rouler() {
+        System.out.println("La moto roule.");
+    }
+
+    @Override
+    public void freiner() {
+        System.out.println("La moto freine.");
+    }
+
+}
+Commentaires et explications
+
+Le package vehicules contient les classes Voiture et Moto.
+La classe Voiture et Moto sont accessibles depuis le package vehicules.
+Utilité du concept
+
+Les packages permettent d'organiser le code et de réduire les conflits de noms.
+Cela permet d'écrire du code qui est plus maintenable et plus extensible.
+Exemple d'utilisation
+
+Dans l'exemple de code, le package vehicules contient toutes les classes et interfaces liées aux véhicules.
+Cela permet de regrouper le code de manière logique et de faciliter sa maintenance.
+Concepts supplémentaires
+
+Importation de packages
+L'importation de packages permet d'utiliser les classes et interfaces d'un autre package.
+
+Exemple de code
+
+package application;
+
+import vehicules.Voiture;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Créer un objet Voiture
+        Voiture voiture = new Voiture("Renault", "Clio");
+
+        // Utiliser l'objet Voiture
+        voiture.rouler();
+        voiture.freiner();
+
+    }
+
+}
+Noms de packages
+Les noms de packages doivent être uniques et ne doivent pas contenir de caractères spéciaux.
+
+Organisation des packages
+Les packages peuvent être organisés en sous-packages.
+
+Exemple de code
+
+package vehicules;
+
+public class Voiture {
+
+    // Propriétés
+    private String marque;
+    private String modele;
+
+    // Constructeur
+    public Voiture(String marque, String modele) {
+        this.marque = marque;
+        this.modele = modele;
+    }
+
+    // Méthodes
+    public void rouler() {
+        System.out.println("La voiture roule.");
+    }
+
+    public void freiner() {
+        System.out.println("La voiture freine.");
+    }
+
+}
+
+package vehicules.motorisations;
+
+public class Moteur {
+
+    // Propriétés
+    private int cylindre;
+
+    // Constructeur
+    public Moteur(int cylindre) {
+        this.cylindre = cylindre;
+    }
+
+    // Méthodes
+    public void demarrer() {
+        System.out.println("Le moteur démarre.");
+    }
+
+    public void accelerer() {
+        System.out.println("Le moteur accélère.");
+    }
+
+}
+Conclusion
+
+Les packages sont un concept important de la programmation orientée objet. Ils permettent d'organiser le code et de réduire les conflits de noms.
