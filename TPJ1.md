@@ -1,9 +1,8 @@
-
 ## TP 1 : Déclaration et affectation de variables
 
 
+```Java
 
-```java
 
 public class TP1 {
 
@@ -35,6 +34,7 @@ public class TP1 {
 }
 ```
 
+
 **Sortie console**
 
 ```
@@ -53,6 +53,7 @@ Les valeurs des variables sont affichées à l'écran.
 ```
 
 ## TP 2 : Calculs et affichage de résultats
+
 
 
 ```Java
@@ -99,11 +100,27 @@ public class TP2 {
     }
 }
 ```
+
+**Sortie console**
+
+```
+L'âge de l'utilisateur dans 10 ans sera de 35
+Le salaire annuel de l'utilisateur est de 1200000.0
+L'utilisateur est majeur
+```
+
+**Explications**
+
+```
+La variable age est déclarée de type int et affectée à la valeur 25.
+La variable salaire est déclarée de type double et affectée à la valeur 100000.0.
+Les calculs sont effectués
+```
+
 ## TP 3 : Boucles et affichage de nombres
 
 
 ```Java
-import java.util.Scanner;
 
 public class TP3 {
 
