@@ -513,3 +513,155 @@ Bonjour !
 ```
 
 Ce code est un bon point de départ pour apprendre les bases de la programmation Java. Il est important de pratiquer la programmation pour maîtriser ces concepts.
+
+## Un TP de synthèse avec 4 méthodes + la méthode main pour résumer les concepts sur les méthodes en Java avec Scanner pour les entrées claviers :
+
+TP de synthèse
+
+Objectifs
+
+Récapituler les concepts sur les méthodes en Java
+Utiliser Scanner pour les entrées claviers
+Méthodes
+
+saisirNom() : demande à l'utilisateur de saisir son nom et renvoie la chaîne de caractères saisie.
+saisirAge() : demande à l'utilisateur de saisir son âge et renvoie l'entier saisi.
+calculerSalaire() : calcule le salaire annuel d'un employé en fonction de son âge.
+afficherResultats() : affiche les résultats du calcul du salaire.
+Méthode main
+
+```
+Java
+public class TPSynthese {
+
+    public static void main(String[] args) {
+
+        // Déclaration des variables
+        String nom;
+        int age;
+        float salaire;
+
+        // Saisie du nom et de l'âge
+        nom = saisirNom();
+        age = saisirAge();
+
+        // Calcul du salaire
+        salaire = calculerSalaire(age);
+
+        // Affichage des résultats
+        afficherResultats(nom, age, salaire);
+
+    }
+
+    // Méthode pour saisir le nom
+    public static String saisirNom() {
+
+        // Déclaration de la variable
+        String nom;
+
+        // Création d'un objet Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Saisie de l'entrée utilisateur
+        System.out.println("Entrez votre nom : ");
+        nom = scanner.nextLine();
+
+        // Fermeture de l'objet Scanner
+        scanner.close();
+
+        // Retour de la valeur saisie
+        return nom;
+
+    }
+
+    // Méthode pour saisir l'âge
+    public static int saisirAge() {
+
+        // Déclaration de la variable
+        int age;
+
+        // Création d'un objet Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Saisie de l'entrée utilisateur
+        System.out.println("Entrez votre âge : ");
+        age = scanner.nextInt();
+
+        // Fermeture de l'objet Scanner
+        scanner.close();
+
+        // Retour de la valeur saisie
+        return age;
+
+    }
+
+    // Méthode pour calculer le salaire
+    public static float calculerSalaire(int age) {
+
+        // Déclaration de la variable
+        float salaire;
+
+        // Calcul du salaire
+        salaire = 100000 * (age + 25);
+
+        // Retour de la valeur calculée
+        return salaire;
+
+    }
+
+    // Méthode pour afficher les résultats
+    public static void afficherResultats(String nom, int age, float salaire) {
+
+        // Affichage du nom
+        System.out.println("Nom : " + nom);
+
+        // Affichage de l'âge
+        System.out.println("Âge : " + age);
+
+        // Affichage du salaire
+        System.out.println("Salaire : " + salaire);
+
+    }
+
+}
+```
+
+
+**Sortie console**
+
+```
+Entrez votre nom : John Doe
+Entrez votre âge : 30
+Nom : John Doe
+Âge : 30
+Salaire : 3750000
+```
+
+**Explications**
+La méthode saisirNom() utilise Scanner pour lire une chaîne de caractères de l'entrée utilisateur.
+La méthode saisirAge() utilise Scanner pour lire un entier de l'entrée utilisateur.
+La méthode calculerSalaire() calcule le salaire annuel d'un employé en fonction de son âge.
+La méthode afficherResultats() affiche les résultats du calcul du salaire.
+Ce TP permet de mettre en pratique les concepts suivants :
+
+Déclaration de méthodes
+Appel de méthodes
+Paramètres de méthodes
+Retour de méthodes
+Utilisation de Scanner pour les entrées claviers
+Ce TP peut être adapté en fonction des besoins. Par exemple, on peut ajouter des méthodes supplémentaires pour calculer d'autres informations, telles que le montant des impôts ou la durée des vacances.
+
+
+
+La méthode saisirNom() utilise Scanner pour lire une chaîne de caractères de l'entrée utilisateur.
+La méthode saisirAge() utilise Scanner pour lire un entier de l'entrée utilisateur.
+La méthode calculerSalaire() calcule le salaire annuel d'un employé en fonction de son âge.
+La méthode afficherResultats() affiche les résultats du calcul du salaire.
+Ce TP permet de mettre en pratique les concepts suivants :
+
+Déclaration de méthodes
+Appel de méthodes
+Paramètres de méthodes
+Retour de méthodes
+Utilisation de Scanner pour les entrées claviers
+Ce TP peut être adapté en fonction des besoins. Par exemple, on peut ajouter des méthodes supplémentaires pour calculer d'autres informations, telles que le montant des impôts ou la durée des vacances.
