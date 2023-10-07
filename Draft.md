@@ -301,3 +301,193 @@ Remarques
 Les tests unitaires sont une partie essentielle du développement logiciel
 Ils permettent de garantir la qualité du code
 Il existe de nombreuses ressources disponibles pour apprendre à écrire des tests unitaires
+
+Jour 3
+Développement d'une application Web simple
+Création de contrôleurs
+Les contrôleurs sont responsables du traitement des requêtes HTTP et de la génération des réponses.
+Utilisation de Thymeleaf pour les vues
+Thymeleaf est un moteur de template HTML qui permet de créer des vues dynamiques.
+Gestion des données avec Spring Boot
+Spring Boot fournit des fonctionnalités pour gérer les données, telles que Spring Data JPA.
+Intégration d'une base de données (par exemple, MySQL, H2)
+Spring Boot fournit des fonctionnalités pour intégrer des bases de données, telles que Spring Data JPA.
+Création de contrôleurs
+
+Les contrôleurs sont responsables du traitement des requêtes HTTP et de la génération des réponses.
+
+Ils sont définis dans des classes qui héritent de la classe @Controller.
+
+Les contrôleurs utilisent des méthodes annotées avec @RequestMapping pour mapper les requêtes HTTP aux actions.
+
+Utilisation de Thymeleaf pour les vues
+
+Thymeleaf est un moteur de template HTML qui permet de créer des vues dynamiques.
+
+Les vues Thymeleaf sont définies dans des fichiers HTML qui utilisent des expressions Thymeleaf pour accéder aux données du modèle.
+
+Gestion des données avec Spring Boot
+
+Spring Boot fournit des fonctionnalités pour gérer les données, telles que Spring Data JPA.
+
+Spring Data JPA est une API pour accéder aux données dans les bases de données relationnelles.
+
+Intégration d'une base de données (par exemple, MySQL, H2)
+
+Spring Boot fournit des fonctionnalités pour intégrer des bases de données, telles que Spring Data JPA.
+
+Pour intégrer une base de données MySQL, vous pouvez utiliser la dépendance mysql-connector-java.
+
+Pour intégrer une base de données H2, vous pouvez utiliser la dépendance h2.
+
+Slides du Jour 3
+
+Diapositive 1
+
+Titre : Développement d'une application Web simple
+Sous-titre : Contrôleurs, vues, données
+Diapositive 2
+
+Contrôleurs
+Responsables du traitement des requêtes HTTP et de la génération des réponses
+Vues
+Utilisées pour afficher les données à l'utilisateur
+Données
+Stockées dans une base de données
+Diapositive 3
+
+Contrôleurs en Java
+Définition
+Mapping des requêtes HTTP aux actions
+Diapositive 4
+
+Thymeleaf
+Moteur de template HTML
+Expressions Thymeleaf
+Diapositive 5
+
+Spring Data JPA
+API pour accéder aux données dans les bases de données relationnelles
+Diapositive 6
+
+Intégration d'une base de données
+MySQL
+H2
+Diapositive 7
+
+Exemple d'application Web simple
+Contrôleur
+Vue
+Base de données
+Diapositive 8
+
+Conclusion
+Développement d'une application Web simple
+Contrôleurs
+Vues
+Données
+Diapositive 9
+
+Exercice
+Créer une application Web simple qui affiche une liste de produits
+Diapositive 10
+
+Remarques
+Les applications Web peuvent être complexes
+Il existe de nombreuses autres technologies et frameworks qui peuvent être utilisés pour développer des applications We
+
+
+
+
+
+
+
+
+
+
+Diapositive 11
+
+Titre : Développement d'une application Web simple
+Sous-titre : Exemple d'application Web simple
+Diapositive 12
+
+Contrôleur
+Classe ProductController
+Méthode index()
+Java
+@Controller
+public class ProductController {
+
+    @GetMapping("/")
+    public String index(Model model) {
+        // Récupère la liste des produits
+        List<Product> products = productService.findAll();
+
+        // Ajoute la liste des produits au modèle
+        model.addAttribute("products", products);
+
+        return "index";
+    }
+}
+Utilisez le code avec précaution. En savoir plus
+Diapositive 13
+
+Vue
+Fichier index.html
+Utilise des expressions Thymeleaf pour afficher la liste des produits
+HTML
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Liste des produits</title>
+</head>
+<body>
+    <h1>Liste des produits</h1>
+    <ul>
+        <li th:each="product : ${products}">
+            <a th:href="@{/product/{id}(id=${product.id})}">
+                {{ product.name }}
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
+Utilisez le code avec précaution. En savoir plus
+Diapositive 14
+
+Base de données
+Table products
+Colonnes id, name, price
+SQL
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    price DECIMAL(10, 2)
+);
+Utilisez le code avec précaution. En savoir plus
+Diapositive 15
+
+Exercice
+Créer une application Web simple qui affiche une liste de produits
+Diapositive 16
+
+Remarques
+Les applications Web peuvent être complexes
+Il existe de nombreuses autres technologies et frameworks qui peuvent être utilisés pour développer des applications Web
+Conclusion
+
+Ce plan de formation a couvert les bases du développement d'applications Web en Java.
+
+Les sujets suivants ont été abordés :
+
+Installation de l'environnement de développement Java
+Introduction à Java
+Les bases de la programmation orientée objet
+Tests unitaires en Java
+Collections en Java
+Entrée/sortie (E/S) en Java
+Développement d'une application Web simple
+Ce plan de formation est un point de départ pour apprendre à développer des applications Web en Java.
+
+Pour en savoir plus, il existe de nombreuses ressources disponibles, telles que des livres, des articles et des cours en ligne.
