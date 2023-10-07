@@ -7,6 +7,7 @@ Contrôle de Flux (if-else, boucles, switch)
 Méthodes et Fonctions
 Tableaux et Listes
 Classes et Objets
+Visibilité des Variables et des Classes 
 Encapsulation
 Héritage
 Polymorphisme
@@ -136,6 +137,37 @@ Les tableaux et les listes permettent de stocker des données de manière organi
 
 C'est le lot de 5 concepts avec des définitions, des exemples de code et des commentaires, formaté en Markdown. Si vous souhaitez en savoir plus sur les cinq concepts suivants ou si vous avez des questions spécifiques, n'hésitez pas à demander !
 
+## 5bis. Visibilité des Variables et des Classes :
+
+La visibilité en Java détermine où une variable, une méthode ou une classe peut être utilisée. Il y a plusieurs niveaux de visibilité : public, protected, default (ou package-private) et private.
+
+Exemple de Code avec Commentaire :
+
+Variables avec Différents Niveaux de Visibilité :
+java
+Copy code
+public class Personne {
+    public String nom; // Public : accessible de n'importe où
+    protected int age; // Protected : accessible dans la même classe, dans les sous-classes et dans le même paquetage
+    String adresse; // Default (Package-Private) : accessible uniquement dans le même paquetage
+    private String numeroSecu; // Private : accessible uniquement dans la même classe
+}
+Commentaire : Dans cet exemple, nom est public, donc il peut être accédé de n'importe où. age est protégé, donc il peut être accédé dans la classe Personne, dans ses sous-classes et dans le même paquetage. adresse est au niveau par défaut (package-private), donc il est accessible uniquement dans le même paquetage. numeroSecu est privé, donc il est accessible uniquement dans la classe Personne.
+
+Classes avec Différents Niveaux de Visibilité :
+java
+Copy code
+public class Utilisateur {
+    // ...
+}
+
+class Admin {
+    // Default (Package-Private) : accessible uniquement dans le même paquetage
+    // ...
+}
+Commentaire : Utilisateur est public, donc il peut être utilisé de n'importe où. Admin est au niveau par défaut (package-private), donc il est accessible uniquement dans le même paquetage.
+
+La compréhension des niveaux de visibilité est essentielle pour la conception de classes et d'objets encapsulés, garantissant que les détails internes d'une classe ne sont pas exposés de manière inappropriée à l'extérieur de cette classe ou de son paquetage.
 6. Encapsulation
 Définition : L'encapsulation est le principe de regrouper les données (variables) et les méthodes (fonctions) qui les manipulent dans une seule unité appelée classe.
 
