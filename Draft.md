@@ -21,6 +21,122 @@ public class HelloWorld {
 Utilisez le code avec précaution. En savoir plus
 Ce programme affiche le message "Hello, world!" dans la console.
 
+Jour 1
+Introduction à Java
+Qu'est-ce que Java ?
+Installation de l'environnement de développement Java
+Les bases de la programmation Java
+Variables
+Types de données
+Opérations
+Conditions
+Boucles
+Fonctions
+Diapositives du Jour 1
+
+Diapositive 1
+
+Titre : Introduction à Java
+Sous-titre : Qu'est-ce que Java ?
+Diapositive 2
+
+Java est un langage de programmation orienté objet
+Créé par Sun Microsystems en 1995
+Open source et gratuit
+Utilisé pour développer des applications Web, mobiles, de bureau et d'entreprise
+Diapositive 3
+
+Installation de l'environnement de développement Java
+Diapositive 4
+
+Les bases de la programmation Java
+Variables
+Types de données
+Opérations
+Conditions
+Boucles
+Fonctions
+Explications
+
+Diapositive 2
+
+Java est un langage de programmation orienté objet
+
+Les objets sont des entités qui ont des propriétés et des méthodes
+Les propriétés sont des données associées à un objet
+Les méthodes sont des actions qu'un objet peut effectuer
+Créé par Sun Microsystems en 1995
+
+Sun Microsystems a été racheté par Oracle en 2010
+Open source et gratuit
+
+Java est un logiciel open source, ce qui signifie qu'il est disponible gratuitement et que son code source est accessible à tous
+Utilisé pour développer des applications Web, mobiles, de bureau et d'entreprise
+
+Java est un langage de programmation polyvalent qui peut être utilisé pour développer une grande variété d'applications
+Diapositive 3
+
+Les variables
+
+Les variables sont utilisées pour stocker des données
+Les variables doivent être déclarées avant utilisation
+Les variables peuvent être de différents types de données
+Types de données
+
+Les types de données définissent le type de données qu'une variable peut contenir
+Les types de données primitifs sont les types de données de base de Java
+Les types de données non primitifs sont des types de données complexes qui sont construits à partir de types de données primitifs
+Opérations
+
+Les opérations sont utilisées pour effectuer des calculs sur des données
+Les opérations arithmétiques sont les opérations les plus courantes
+Conditions
+
+Les conditions sont utilisées pour tester des conditions et prendre des décisions
+Les instructions if et else sont utilisées pour tester des conditions simples
+Les instructions switch sont utilisées pour tester des conditions complexes
+Boucles
+
+Les boucles sont utilisées pour répéter des instructions
+Les instructions for et while sont utilisées pour répéter des instructions un nombre fixe de fois
+Les instructions do-while sont utilisées pour répéter des instructions jusqu'à ce qu'une condition soit remplie
+Fonctions
+
+Les fonctions sont des blocs de code qui peuvent être réutilisés
+Les fonctions sont déclarées avec la mot-clé function
+Exemple
+
+Java
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        // Déclaration d'une variable
+        int age = 25;
+
+        // Affichage de la valeur de la variable
+        System.out.println(age);
+
+        // Calcul de l'âge de l'utilisateur dans 10 ans
+        int ageDansDixAns = age + 10;
+
+        // Affichage du résultat du calcul
+        System.out.println("L'âge de l'utilisateur dans 10 ans sera de " + ageDansDixAns);
+
+        // Condition
+        if (age >= 18) {
+            System.out.println("L'utilisateur est majeur");
+        } else {
+            System.out.println("L'utilisateur est mineur");
+        }
+
+        // Boucle
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+
+        // Fonction
+        sayHello
+
 Les bases de la programmation orientée objet
 Classes et objets
 En programmation orientée objet, les données et les comportements sont organisés dans des classes.
