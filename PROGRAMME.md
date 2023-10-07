@@ -8,6 +8,14 @@
 * Installation de l'environnement de développement Java
 * Écriture d'un premier programme Java
 
+### Opérateurs en Java
+
+* Opérateurs arithmétiques
+* Opérateurs logiques
+* Opérateurs de comparaison
+* Opérateurs de flux
+* Opérateurs de chaîne de caractères
+  
 ### Les bases de la programmation orientée objet
 
 * Classes et objets
@@ -16,13 +24,6 @@
 * Interfaces
 * Exceptions
 
-### Opérateurs en Java
-
-* Opérateurs arithmétiques
-* Opérateurs logiques
-* Opérateurs de comparaison
-* Opérateurs de flux
-* Opérateurs de chaîne de caractères
 
 ## Jour 2
 
