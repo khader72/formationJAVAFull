@@ -302,4 +302,151 @@ Commentaire :
 
 La gestion automatique de la mémoire soulage les développeurs de la nécessité de gérer manuellement l'allocation et la libération de la mémoire, améliorant ainsi la productivité et la fiabilité du code.
 
+15. Threads et Multithreading:
+Définition : Les threads (ou fils d'exécution) sont des unités d'exécution indépendantes qui permettent à un programme Java d'effectuer plusieurs tâches simultanément. Le multithreading améliore l'efficacité en utilisant les ressources du processeur de manière optimale.
+
+Exemple de Code :
+
+java
+Copy code
+class MonThread extends Thread {
+    public void run() {
+        System.out.println("Le thread est en cours d'exécution.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MonThread thread = new MonThread();
+        thread.start();
+    }
+}
+Commentaire :
+
+Les threads permettent d'effectuer des opérations simultanées, améliorant la réactivité et les performances des applications.
+
+16. Entrées/Sorties (Streams):
+Définition : Les flux (streams) sont des flux de données utilisés pour lire ou écrire des données à partir de/vers une source. Les flux peuvent être liés à des fichiers, des périphériques ou même d'autres programmes.
+
+Exemple de Code :
+
+java
+Copy code
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        FileInputStream input = new FileInputStream("input.txt");
+        FileOutputStream output = new FileOutputStream("output.txt");
+        int data;
+        while ((data = input.read()) != -1) {
+            output.write(data);
+        }
+        input.close();
+        output.close();
+    }
+}
+Commentaire :
+
+Les flux sont utilisés pour manipuler les données à un niveau bas, facilitant la lecture et l'écriture de fichiers et de données.
+
+17. Manipulation de Fichiers et Répertoires:
+Définition : La manipulation de fichiers et de répertoires permet de créer, lire, écrire, supprimer et renommer des fichiers et des répertoires. Java propose des classes telles que File pour effectuer ces opérations.
+
+Exemple de Code :
+
+java
+Copy code
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        File fichier = new File("monFichier.txt");
+        if (fichier.exists()) {
+            System.out.println("Le fichier existe.");
+        } else {
+            System.out.println("Le fichier n'existe pas.");
+        }
+    }
+}
+Commentaire :
+
+La manipulation de fichiers est essentielle pour stocker et récupérer des données de manière persistante.
+
+18. Serialization:
+Définition : La sérialisation est le processus de conversion d'un objet Java en un flux d'octets, qui peut être enregistré dans un fichier ou transféré via un réseau. La désérialisation est l'opération inverse, convertissant un flux d'octets en un objet Java.
+
+Exemple de Code :
+
+java
+Copy code
+import java.io.*;
+
+class Personne implements Serializable {
+    String nom;
+    int age;
+}
+
+public class Main {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        // Sérialisation
+        Personne personne = new Personne();
+        personne.nom = "Alice";
+        personne.age = 30;
+        ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("personne.ser"));
+        out.writeObject(personne);
+        out.close();
+
+        // Désérialisation
+        ObjectInputStream in = new ObjectInputStream(new FileInputStream("personne.ser"));
+        Personne personneDeserialisee = (Personne) in.readObject();
+        in.close();
+        System.out.println("Nom : " + personneDeserialisee.nom + ", Âge : " + personneDeserialisee.age);
+    }
+}
+Commentaire :
+
+La sérialisation est utilisée pour stocker des objets Java de manière persistante ou pour les transmettre via un réseau.
+
+19. Annotations:
+Définition : Les annotations sont des métadonnées ajoutées au code source Java. Elles fournissent des informations supplémentaires sur les éléments du code, utilisées par le compilateur, l'IDE ou d'autres outils pour effectuer des tâches spécifiques.
+
+Exemple de Code :
+
+java
+Copy code
+import java.lang.annotation.*;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface MonAnnotation {
+    String valeur() default "Valeur par défaut";
+}
+Commentaire :
+
+Les annotations sont largement utilisées dans les frameworks Java pour configurer et personnaliser le comportement des composants.
+
+20. Reflection:
+Définition : La réflexion (reflection) est la capacité d'un programme Java à examiner ou manipuler ses propres classes, méthodes, champs, annotations, etc., à l'exécution. Elle offre une grande flexibilité mais doit être utilisée avec précaution en raison de son coût en termes de performances.
+
+Exemple de Code :
+
+java
+Copy code
+import java.lang.reflect.Method;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Class<?> classe = Class.forName("NomDeVotreClasse");
+        Method[] methods = classe.getMethods();
+        for (Method method : methods) {
+            System.out.println("Méthode : " + method.getName());
+        }
+    }
+}
+Commentaire :
+
+La réflexion permet d'inspecter et de manipuler le code à l'exécution, ce qui est souvent utilisé dans les frameworks et les outils de développement.
 
