@@ -299,3 +299,148 @@ Les méthodes getNom()
 Sources
 gayerie.dev/epsi-b3-javaee/javaee_web/jsf.html
 github.com/Orann/gestion_parc_attraction
+
+
+### Concept 6 : Abstraction
+
+L'abstraction est le processus de masquage des détails d'une classe aux utilisateurs de la classe.
+
+Exemple de code
+
+Java
+public abstract class Vehicule {
+
+    // Propriétés
+    private String marque;
+    private String modele;
+
+    // Constructeur
+    public Vehicule(String marque, String modele) {
+        this.marque = marque;
+        this.modele = modele;
+    }
+
+    // Méthodes abstraites
+    public abstract void rouler();
+
+    public abstract void freiner();
+
+}
+
+public class Voiture extends Vehicule {
+
+    // Propriétés
+    private int nombreDePortes;
+
+    // Constructeur
+    public Voiture(String marque, String modele, int nombreDePortes) {
+        super(marque, modele);
+        this.nombreDePortes = nombreDePortes;
+    }
+
+    // Méthodes implémentées
+    @Override
+    public void rouler() {
+        System.out.println("La voiture roule.");
+    }
+
+    @Override
+    public void freiner() {
+        System.out.println("La voiture freine.");
+    }
+
+}
+
+public class Moto extends Vehicule {
+
+    // Propriétés
+    private int nombreDeCylindres;
+
+    // Constructeur
+    public Moto(String marque, String modele, int nombreDeCylindres) {
+        super(marque, modele);
+        this.nombreDeCylindres = nombreDeCylindres;
+    }
+
+    // Méthodes implémentées
+    @Override
+    public void rouler() {
+        System.out.println("La moto roule.");
+    }
+
+    @Override
+    public void freiner() {
+        System.out.println("La moto freine.");
+    }
+
+}
+Utilisez le code avec précaution. En savoir plus
+Commentaires et explications
+
+La classe Vehicule est une classe abstraite.
+Les classes Voiture et Moto héritent de la classe Vehicule.
+Les classes Voiture et Moto implémentent les méthodes abstraites rouler() et freiner().
+Utilité du concept
+
+L'abstraction permet de simplifier le code en permettant de regrouper des propriétés et des comportements communs dans une classe abstraite.
+Cela permet d'écrire du code qui est plus générique et plus extensible.
+Exemple d'utilisation
+
+Dans l'exemple de code, la classe Vehicule représente un concept générique de véhicule.
+Les classes Voiture et Moto représentent des types spécifiques de véhicules.
+
+
+### Concept 7 : Composition
+
+La composition est une relation entre deux classes où une classe, la classe composite, contient une référence à une autre classe, la classe composante.
+
+Exemple de code
+
+Java
+public class Voiture {
+
+    // Propriétés
+    private Moteur moteur;
+
+    // Constructeur
+    public Voiture(Moteur moteur) {
+        this.moteur = moteur;
+    }
+
+    // Méthodes
+    public void rouler() {
+        moteur.demarrer();
+        moteur.accelerer();
+    }
+
+}
+
+public class Moteur {
+
+    // Propriétés
+    private int cylindre;
+
+    // Constructeur
+    public Moteur(int cylindre) {
+        this.cylindre = cylindre;
+    }
+
+    // Méthodes
+    public void demarrer() {
+        System.out.println("Le moteur démarre.");
+    }
+
+    public void accelerer() {
+        System.out.println("Le moteur accélère.");
+    }
+
+}
+Utilisez le code avec précaution. En savoir plus
+Commentaires et explications
+
+La classe Voiture contient une référence à la classe Moteur.
+La classe Moteur est une composante de la classe Voiture.
+Utilité du concept
+
+La composition permet de modéliser des objets complexes composés de plusieurs objets plus simples.
+Cela permet d'écrire du code
