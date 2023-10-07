@@ -40,7 +40,8 @@ La méthode afficherSalaire() affiche le salaire de l'employé.
 Le concept de classe permet de créer des objets avec des propriétés et des comportements similaires.
 Cela permet de réduire la duplication de code et de faciliter la maintenance du code.
 Les classes peuvent être réutilisées dans différents projets.
-Exemple d'utilisation
+
+**Exemple d'utilisation**
 
 La classe Employe peut être utilisée pour représenter un employé dans une entreprise.
 Les propriétés nom, age et salaire peuvent être utilisées pour stocker les informations sur l'employé.
@@ -81,7 +82,8 @@ La ligne employe.afficherSalaire(); appelle la méthode afficherSalaire() sur l'
 Le concept d'objet permet de créer des instances uniques d'une classe.
 Cela permet de représenter des objets du monde réel dans le code.
 Les objets peuvent être utilisés pour stocker des données et exécuter des actions.
-Exemple d'utilisation
+
+**Exemple d'utilisation**
 
 L'objet employe créé dans l'exemple de code représente un employé spécifique.
 Les propriétés nom, age et salaire stockent les informations sur l'employé.
