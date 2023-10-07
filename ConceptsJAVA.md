@@ -528,6 +528,39 @@ Commentaire :
 
 JavaFX est largement utilisé pour le développement d'applications de bureau, offrant des fonctionnalités avancées pour les interfaces utilisateur interactives.
 
+25bis. Swing (Java GUI Toolkit):
+
+Définition : Swing est une bibliothèque graphique pour Java. Elle permet de créer des interfaces utilisateur graphiques (GUI) pour les applications Java. Swing offre une grande variété de composants, de fenêtres, de boîtes de dialogue et d'autres éléments pour créer des applications interactives.
+
+Exemple de Code (Swing) :
+
+java
+Copy code
+import javax.swing.*;
+
+public class MaFenetre {
+    public static void main(String[] args) {
+        JFrame fenetre = new JFrame("Ma Fenêtre Swing");
+        JButton bouton = new JButton("Cliquez ici");
+
+        // Ajout du bouton à la fenêtre
+        fenetre.getContentPane().add(bouton);
+
+        // Définition de l'action lorsque le bouton est cliqué
+        bouton.addActionListener(e -> {
+            JOptionPane.showMessageDialog(fenetre, "Bonjour, vous avez cliqué sur le bouton !");
+        });
+
+        // Définition des propriétés de la fenêtre
+        fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fenetre.setSize(300, 200);
+        fenetre.setVisible(true);
+    }
+}
+Commentaire :
+
+Swing est une bibliothèque classique pour créer des interfaces utilisateur en Java. Bien que JavaFX soit plus moderne et recommandé pour de nouveaux projets, Swing reste utilisé dans certaines applications existantes.
+
 26. Java EE (Enterprise Edition):
 Définition : Java EE est une extension de Java SE (Standard Edition) destinée au développement d'applications d'entreprise. Il offre des spécifications et des API pour les applications Web, les services web, la gestion de données, etc.
 
