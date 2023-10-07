@@ -1,0 +1,81 @@
+
+Draft de ma proposition pour la formation Java Web:
+
+Un programme de formation sur 3 jours pour maîtriser la programmation orientée objet (POO) en Java et l'initiation au développement web en utilisant Maven et Spring Boot :
+
+
+Jour 1: Introduction à Java et à la POO
+
+
+Session 1: Introduction à Java
+
+Syntaxe de base
+
+Types de données et variables
+
+Structures de contrôle (if, for, while)
+
+Session 2: Les bases de la POO en Java
+
+Classes et objets
+
+Encapsulation, héritage, polymorphisme
+
+Méthodes et constructeurs
+
+Session 3: Gestion des exceptions en Java
+
+Les exceptions courantes
+
+Blocs try-catch
+
+Création de vos exceptions personnalisées
+
+
+Jour 2: Java Avancé et Maven
+
+
+Session 4: Collections et génériques
+
+Listes, ensembles et cartes
+
+Utilisation de génériques
+
+Session 5: Entrées/sorties (E/S) en Java
+
+Lecture et écriture de fichiers
+
+Flux d'E/S
+
+Session 6: Introduction à Maven
+
+Installation et configuration
+
+Gestion des dépendances
+
+Création de projets Maven
+
+
+Jour 3: Développement Web avec Spring Boot
+
+
+Session 7: Introduction à Spring Boot
+
+Configuration de base
+
+Création d'un projet Spring Boot
+
+Session 8: Développement d'une application Web simple
+
+Création de contrôleurs
+
+Utilisation de Thymeleaf pour les vues
+
+Session 9: Gestion des données avec Spring Boot
+
+Utilisation de Spring Data JPA
+
+Intégration d'une base de données (par exemple, MySQL, H2)
+
+
+Ce programme couvre les bases de Java, la POO, la gestion de projet avec Maven et l'initiation au développement web avec Spring Boot.
