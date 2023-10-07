@@ -12,6 +12,7 @@ Héritage
 Polymorphisme
 Abstraction
 Interfaces
+Génériques (Generics)
 Gestion des Exceptions
 Packages et Modules
 Expressions Régulières (Regex)
@@ -232,6 +233,60 @@ class Chien implements Animal {
     }
 }
 Commentaire : Les interfaces définissent des contrats que les classes doivent suivre, permettant ainsi de définir des comportements communs à plusieurs classes.
+
+10 bis . Génériques (Generics) :
+Définition : Les génériques en Java permettent de créer des composants réutilisables qui peuvent fonctionner avec différents types de données tout en assurant la sécurité de type à la compilation.
+
+Exemple de Code :
+
+Classe Générique :
+java
+Copy code
+public class Boite<T> {
+    private T contenu;
+
+    public void mettre(T objet) {
+        this.contenu = objet;
+    }
+
+    public T obtenir() {
+        return contenu;
+    }
+
+    public static void main(String[] args) {
+        Boite<String> boiteString = new Boite<>();
+        boiteString.mettre("Bonjour, monde !");
+        String message = boiteString.obtenir();
+        System.out.println("Contenu de la boîte à chaînes : " + message);
+
+        Boite<Integer> boiteEntier = new Boite<>();
+        boiteEntier.mettre(42);
+        int nombre = boiteEntier.obtenir();
+        System.out.println("Contenu de la boîte d'entiers : " + nombre);
+    }
+}
+Méthode Générique :
+java
+Copy code
+public class Utils {
+    public <T> T fusionner(T a, T b) {
+        // Logique pour fusionner deux objets de type T
+        // ...
+        return null; // Retourne le résultat de la fusion
+    }
+
+    public static void main(String[] args) {
+        Utils utilitaire = new Utils();
+        String resultatChaine = utilitaire.fusionner("Bonjour, ", "monde !");
+        System.out.println(resultatChaine);
+
+        Integer resultatEntier = utilitaire.fusionner(5, 7);
+        System.out.println("Résultat de la fusion des entiers : " + resultatEntier);
+    }
+}
+Commentaire :
+
+Dans l'exemple ci-dessus, la classe Boite est générique et peut contenir n'importe quel type d'objet. La méthode fusionner de la classe Utils est générique et peut fusionner deux objets du même type. L'utilisation de génériques améliore la sécurité de type et la réutilisabilité du code en permettant aux classes et aux méthodes de travailler avec différents types de données.
 
 11. Gestion des Exceptions:
 Définition : La gestion des exceptions permet de gérer les situations exceptionnelles qui peuvent survenir pendant l'exécution d'un programme. Cela inclut la capture et le traitement des erreurs pour éviter les interruptions inattendues du programme.
