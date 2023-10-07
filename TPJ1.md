@@ -1,3 +1,21 @@
+## TP0 :Écriture d'un premier programme Java
+
+Voici un exemple de programme Java simple :
+
+```Java
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}
+```
+
+** Sortie de la console **
+
+Ce programme affiche le message "Hello, world!" dans la console.
+
+
 ## TP 1 : Déclaration et affectation de variables
 
 
