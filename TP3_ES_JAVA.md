@@ -204,8 +204,9 @@ public class LireFichierBinaire {
         }
     }
 }
-Utilisez le code avec précaution. En savoir plus
-Conclusion
+
+
+**Conclusion**
 
 La lecture de fichiers binaires est une opération courante en Java. La classe DataInputStream fournit une API simple et efficace pour lire les données d'un fichier binaire.
 Utilisez le code avec précaution. En savoir plus
