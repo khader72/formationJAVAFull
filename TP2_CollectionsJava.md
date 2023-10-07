@@ -1,6 +1,48 @@
 # Collections en Java :
 En Java, les collections sont des structures de données prédéfinies qui permettent de stocker, d'organiser et de manipuler des groupes d'objets. Voici une vue d'ensemble des types de collections principales en Java, accompagnée de cas d'usages et d'exemples de code.
 
+##  Synthèse sur les Collections
+
+| **Collection**        | **Explication**                                | **Exemple de Code**                                        | **Cas d'Usage**                                  | **Particularités**                                              |
+|-----------------------|-------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------------------------|
+| **Liste**             | Collection ordonnée d'éléments.                | ```java List<String> liste = new ArrayList<>(); liste.add("Élément 1"); liste.add("Élément 2");``` | Stocker des éléments dans l'ordre d'insertion.    | Permet les éléments en double, accès par index.                   |
+| **Ensemble (Set)**    | Collection d'éléments uniques.                  | ```java Set<String> ensemble = new HashSet<>(); ensemble.add("Élément 1"); ensemble.add("Élément 2");``` | Éliminer les doublons, tester l'appartenance.    | Ne permet pas les éléments en double.                               |
+| **Map**               | Stockage de paires clé-valeur.                  | ```java Map<String, Integer> map = new HashMap<>(); map.put("Clé 1", 1); map.put("Clé 2", 2);``` | Stocker des données associées à une clé unique.  | Clés uniques, valeurs peuvent être en double.                       |
+| **File d'Attente (Queue)** | Stockage avec retrait FIFO (First-In-First-Out). | ```java Queue<String> fileAttente = new LinkedList<>(); fileAttente.add("Élément 1"); fileAttente.add("Élément 2");``` | Gérer des tâches dans l'ordre d'arrivée.        | Permet un traitement FIFO des éléments.                             |
+| **Liste Liée**        | Liste doublement chaînée de nœuds.             | ```java LinkedList<String> listeLiee = new LinkedList<>(); listeLiee.add("Élément 1"); listeLiee.add("Élément 2");``` | Insertions et suppressions efficaces.           | Accès par index moins efficace que dans une ArrayList.             |
+| **File (Deque)**      | Double file, ajout/retrait des deux côtés.     | ```java Deque<String> deque = new ArrayDeque<>(); deque.addFirst("Premier"); deque.addLast("Dernier");``` | File avec ajout/retrait des deux côtés.        | Opérations d'ajout/retrait des deux côtés efficaces.                 |
+| **Table de Hachage (Hashtable)** | Collection synchronisée de paires clé-valeur. | ```java Hashtable<String, Integer> tableHachage = new Hashtable<>(); tableHachage.put("Clé 1", 1); tableHachage.put("Clé 2", 2);``` | Utilisation dans des environnements multi-thread. | Synchronisée, donc sûr pour les opérations multi-thread.              |
+| **Liste Triée**       | Liste triée d'éléments.                        | ```java SortedSet<String> listeTriee = new TreeSet<>(); listeTriee.add("Élément 2"); listeTriee.add("Élément 1");``` | Maintenir une liste triée.                     | Triée automatiquement selon l'ordre naturel des éléments.            |
+| **Liste Triée par Comparator** | Liste triée par un comparateur personnalisé. | ```java SortedSet<String> listeTrieeCustom = new TreeSet<>(Comparator.reverseOrder());``` | Tri personnalisé en fonction du comparateur.   | Triée dans l'ordre inverse de l'ordre naturel des éléments.         |
+| **Liste Triée par Objet Comparator** | Liste triée par un comparateur externe.   | ```java SortedSet<Personne> personnesTriees = new TreeSet<>(new ComparateurAge());``` | Tri personnalisé d'objets par un comparateur.  | Triée selon les règles spécifiées dans le comparateur externe.       |
+
+
+Cas d'Usage :
+
+Liste : Utilisée pour les éléments où l'ordre d'insertion est important, comme une liste de tâches.
+Ensemble (Set) : Utile lorsqu'on a besoin d'assurer l'unicité des éléments, comme les adresses email uniques.
+Map : Idéale pour stocker des associations clé-valeur, par exemple, un dictionnaire de mots.
+File d'Attente (Queue) : Pour gérer les tâches dans l'ordre d'arrivée, comme un système de files d'attente.
+Liste Liée : Pratique lorsqu'on a besoin d'insertions ou de suppressions fréquentes, comme dans un éditeur de texte.
+File (Deque) : Parfaite pour les opérations d'ajout ou de retrait des deux côtés, comme un jeu de cartes.
+Table de Hachage (Hashtable) : Pour les environnements multi-thread où la synchronisation est requise, comme une table de sessions dans une application Web.
+Liste Triée : Pour maintenir automatiquement une liste triée, comme une liste alphabétique des contacts.
+Liste Triée par Comparator : Tri personnalisé, par exemple, trier les éléments par longueur de chaîne.
+Liste Triée par Objet Comparator : Tri personnalisé d'objets en fonction de critères spécifiques.
+Particularités :
+
+Liste : Permet les éléments en double, accès par index.
+Ensemble (Set) : Ne permet pas les éléments en double.
+Map : Clés uniques, valeurs peuvent être en double.
+File d'Attente (Queue) : Opérations d'ajout/retrait des deux côtés efficaces.
+Liste Liée : Accès par index moins efficace que dans une ArrayList.
+File (Deque) : Opérations d'ajout/retrait des deux côtés efficaces.
+Table de Hachage (Hashtable) : Synchronisée, donc sûr pour les opérations multi-thread.
+Liste Triée : Triée automatiquement selon l'ordre naturel des éléments.
+Liste Triée par Comparator : Triée dans l'ordre inverse de l'ordre naturel des éléments.
+Liste Triée par Objet Comparator : Triée selon les règles spécifiées dans le comparateur externe.
+Les différentes collections Java offrent des caractéristiques spécifiques adaptées à divers scénarios d'utilisation, permettant aux développeurs de choisir la collection appropriée en fonction des besoins de leur application.
+
 ##  1. Liste :
 
 Cas d'Usage : Stockage d'une collection ordonnée d'éléments.
