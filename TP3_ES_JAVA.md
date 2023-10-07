@@ -94,4 +94,117 @@ public class EcrireFichierTexte {
         ecrivain.close();
     }
 }
+
+### Exercice 3 : Lecture d'un fichier binaire
+
+Explications
+
+Pour lire un fichier binaire en Java, nous utilisons la classe DataInputStream. Cette classe fournit des méthodes pour lire les données d'un fichier binaire octet par octet.
+
+Pour ouvrir un fichier binaire, nous utilisons la méthode open() de la classe DataInputStream. Cette méthode prend en paramètre un objet File qui représente le fichier à ouvrir.
+
+Une fois le fichier ouvert, nous pouvons utiliser les méthodes read(), readInt(), readDouble(), etc. pour lire les données du fichier.
+
+Pour fermer le fichier, nous utilisons la méthode close() de la classe DataInputStream.
+
+Cas d'usages
+
+La lecture de fichiers binaires est utile dans de nombreux cas, notamment :
+
+La lecture de fichiers d'images, de fichiers audio ou de fichiers vidéo.
+La lecture de fichiers de données, tels que des fichiers CSV ou des fichiers JSON.
+La lecture de fichiers de configuration.
+Exemples de code
+
+Voici quelques exemples de code pour lire un fichier binaire :
+
+Lecture d'un entier
+Java
+import java.io.File;
+import java.io.DataInputStream;
+import java.io.IOException;
+
+public class LireFichierBinaire {
+
+    public static void main(String[] args) throws IOException {
+
+        // Créer un objet File pour représenter le fichier à lire
+        File fichier = new File("data.bin");
+
+        // Ouvrir le fichier en lecture
+        DataInputStream lecteur = new DataInputStream(new FileInputStream(fichier));
+
+        // Lire l'entier
+        int entier = lecteur.readInt();
+
+        // Fermer le fichier
+        lecteur.close();
+
+        // Afficher l'entier
+        System.out.println(entier);
+    }
+}
+Utilisez le code avec précaution. En savoir plus
+Lecture d'une chaîne de caractères
+Java
+import java.io.File;
+import java.io.DataInputStream;
+import java.io.IOException;
+
+public class LireFichierBinaire {
+
+    public static void main(String[] args) throws IOException {
+
+        // Créer un objet File pour représenter le fichier à lire
+        File fichier = new File("data.bin");
+
+        // Ouvrir le fichier en lecture
+        DataInputStream lecteur = new DataInputStream(new FileInputStream(fichier));
+
+        // Lire la chaîne de caractères
+        String chaine = lecteur.readUTF();
+
+        // Fermer le fichier
+        lecteur.close();
+
+        // Afficher la chaîne de caractères
+        System.out.println(chaine);
+    }
+}
+Utilisez le code avec précaution. En savoir plus
+Lecture d'un tableau d'entiers
+Java
+import java.io.File;
+import java.io.DataInputStream;
+import java.io.IOException;
+
+public class LireFichierBinaire {
+
+    public static void main(String[] args) throws IOException {
+
+        // Créer un objet File pour représenter le fichier à lire
+        File fichier = new File("data.bin");
+
+        // Ouvrir le fichier en lecture
+        DataInputStream lecteur = new DataInputStream(new FileInputStream(fichier));
+
+        // Lire le tableau d'entiers
+        int[] entiers = new int[lecteur.readInt()];
+        for (int i = 0; i < entiers.length; i++) {
+            entiers[i] = lecteur.readInt();
+        }
+
+        // Fermer le fichier
+        lecteur.close();
+
+        // Afficher le tableau d'entiers
+        for (int entier : entiers) {
+            System.out.println(entier);
+        }
+    }
+}
+Utilisez le code avec précaution. En savoir plus
+Conclusion
+
+La lecture de fichiers binaires est une opération courante en Java. La classe DataInputStream fournit une API simple et efficace pour lire les données d'un fichier binaire.
 Utilisez le code avec précaution. En savoir plus
