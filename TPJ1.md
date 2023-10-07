@@ -99,7 +99,125 @@ public class TP2 {
     }
 }
 ```
+## TP 3 : Boucles et affichage de nombres
 
+
+```Java
+import java.util.Scanner;
+
+public class TP3 {
+
+    public static void main(String[] args) {
+
+        /*
+        Ce programme affiche les nombres de 0 à 9 en utilisant une boucle `for`.
+
+        La boucle `for` s'exécutera 10 fois, une fois pour chaque nombre de 0 à 9.
+
+        La valeur de la variable `i` sera incrémentée de 1 à chaque itération de la boucle.
+
+        La valeur de la variable `i` est affichée à l'écran à chaque itération de la boucle.
+        */
+
+        // Déclaration de la variable `i`
+        int i;
+
+        // Boucle `for`
+        for (i = 0; i <= 9; i++) {
+            System.out.println(i);
+        }
+
+    }
+}
+```
+
+
+**Sortie console**
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+**Explications**
+
+La variable i est déclarée de type int et affectée à la valeur 0.
+La boucle for s'exécutera 10 fois, une fois pour chaque nombre de 0 à 9.
+La valeur de la variable i est incrémentée de 1 à chaque itération de la boucle.
+La valeur de la variable i est affichée à l'écran à chaque itération de la boucle.
+
+## TP 4 : Saisie d'un nombre et affichage de son carré
+
+
+
+```Java
+import java.util.Scanner;
+
+public class TP4 {
+
+    public static void main(String[] args) {
+
+        /*
+        Ce programme demande à l'utilisateur de saisir un nombre et affiche son carré.
+
+        Un objet `Scanner` est créé pour lire l'entrée utilisateur.
+
+        La méthode `nextInt()` est utilisée pour lire un entier de l'entrée utilisateur.
+
+        La valeur saisie par l'utilisateur est affectée à la variable `nombre`.
+
+        La valeur saisie par l'utilisateur est multipliée par elle-même pour calculer son carré.
+
+        Le carré du nombre saisi est affiché à l'écran.
+
+        L'objet `Scanner` est fermé pour libérer les ressources utilisées.
+        */
+
+        // Déclaration des variables
+        int nombre;
+
+        // Création d'un objet Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Saisie de l'entrée utilisateur
+        System.out.println("Entrez un nombre : ");
+        nombre = scanner.nextInt();
+
+        // Calcul du carré
+        int carre = nombre * nombre;
+
+        // Affichage du résultat
+        System.out.println("Le carré du nombre est de " + carre);
+
+        // Fermeture de l'objet Scanner
+        scanner.close();
+
+    }
+}
+```
+
+**Sortie console**
+
+```
+Entrez un nombre : 5
+Le carré du nombre est de 25
+```
+
+**Explications**
+
+Un objet Scanner est créé pour lire l'entrée utilisateur.
+La méthode nextInt() est utilisée pour lire un entier de l'entrée utilisateur.
+La valeur saisie par l'utilisateur est affectée à la variable nombre.
+La valeur saisie par l'utilisateur est multipliée par elle-même pour calculer son carré.
+Le carré du nombre saisi est affiché à l'écran.
+L'objet Scanner est fermé pour libérer les ressources utilisées.
 
 **Sortie console**
 
