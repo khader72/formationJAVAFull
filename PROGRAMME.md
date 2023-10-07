@@ -1,4 +1,3 @@
-
 # Plan de formation Java Web sur 3 jours
 
 ## Jour 1
@@ -27,23 +26,21 @@
 
 ## Jour 2
 
+### Collections en Java
+
+* Collections immuables
+* Collections réactives
+
+### Entrée/sortie (E/S) en Java
+
+* Lecture et écriture de fichiers texte
+* Lecture et écriture de fichiers binaires
+
 ### Tests unitaires en Java
 
 * Définition des tests unitaires
 * Écrire des tests unitaires
 * Exécuter des tests unitaires
-
-### Introduction à Maven
-
-* Qu'est-ce que Maven ?
-* Installation de Maven
-* Utilisation de Maven pour créer un projet Java
-
-### Spring Boot
-
-* Qu'est-ce que Spring Boot ?
-* Installation de Spring Boot
-* Création d'une application web Spring Boot
 
 ## Jour 3
 
@@ -90,22 +87,17 @@ La formation combinera des exposés théoriques et des exercices pratiques. Les 
 
 Les participants seront évalués sur la base de leurs participations aux exercices et à la réalisation du TP.
 
-## Ressources
-
-* **Documentation officielle de Java**
-* **Tutoriels en ligne**
-* **Livres et ressources pédagogiques**
-
-## Conclusion
-
-Ce programme de formation Java Web est adapté aux débutants qui souhaitent maîtriser les bases de la programmation orientée objet en Java et développer des applications web simples. Il couvre les concepts fondamentaux de la POO, les tests unitaires et l'utilisation de Spring Boot pour créer des applications web.
-
 ## Commentaires
 
-J'ai ajouté une session sur les opérateurs en Java le jour 1. Cette session couvre les opérateurs arithmétiques, logiques, de comparaison, de flux et de chaîne de caractères. Elle permet aux participants de mieux comprendre la syntaxe de Java et d'écrire des programmes plus complexes.
-
-J'ai également ajouté une session sur les tests unitaires le jour 2. Cette session couvre les définitions des tests unitaires, l'écriture de tests unitaires et l'exécution de tests unitaires. Elle permet aux participants de tester leurs programmes et de s'assurer qu'ils fonctionnent correctement.
+* J'ai ajouté une session sur les collections et les génériques le jour 2. Cette session couvre les collections immuables et les collections réactives. Elle permet aux participants de mieux comprendre les concepts de collections en Java et d'écrire des programmes plus efficaces.
+* J'ai également ajouté une session sur les entrées/sorties (E/S) en Java le jour 2. Cette session couvre la lecture et l'écriture de fichiers texte et de fichiers binaires. Elle permet aux participants de mieux comprendre les concepts d'E/S en Java et de créer des programmes qui interagissent avec des fichiers.
 
 Ces deux sessions supplémentaires permettent d'améliorer la formation et de la rendre plus complète. Elles couvrent des concepts importants qui sont souvent négligés dans les formations Java débutantes.
+
+**Explication**
+
+Les tests unitaires sont un outil essentiel pour le développement de logiciels. Ils permettent de garantir que le code fonctionne correctement et de détecter les erreurs rapidement. Il est donc important que les participants à une formation Java Web soient familiarisés avec les concepts de tests unitaires.
+
+En déplaçant la session sur les tests unitaires en introduction du jour 3, les participants auront l'occasion d'apprendre les bases des tests unitaires avant de commencer à développer une application web. Cela leur permettra de mettre en pratique leurs connaissances immédiatement et de détecter les erreurs plus rapidement.
 
 Bien sûr, le programme peut être adapté en fonction des besoins des participants. Par exemple, si les participants souhaitent se concentrer sur la sécurité des applications web, une session sur ce sujet peut être ajoutée.
