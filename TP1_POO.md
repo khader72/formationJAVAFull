@@ -159,3 +159,143 @@ Cela permet de créer des classes plus complexes avec moins de code.
 La classe Manager peut être utilisée pour représenter un manager dans une entreprise.
 La propriété bonus peut être utilisée pour stocker le bonus du manager.
 La méthode afficherSalaire() peut être utilisée pour afficher le salaire et le bonus du manager.
+
+
+### Concept 4 : Polymorphisme
+
+Le polymorphisme est la capacité d'une variable d'une classe mère à référencer un objet d'une classe fille.
+
+Exemple de code
+
+Java
+public class Employe {
+
+    // Propriétés
+    private String nom;
+    private int age;
+    private float salaire;
+
+    // Constructeur
+    public Employe(String nom, int age, float salaire) {
+        this.nom = nom;
+        this.age = age;
+        this.salaire = salaire;
+    }
+
+    // Méthodes
+    public void afficherSalaire() {
+        System.out.println("Le salaire de l'employé est de " + salaire);
+    }
+
+}
+
+public class Manager extends Employe {
+
+    // Propriétés
+    private float bonus;
+
+    // Constructeur
+    public Manager(String nom, int age, float salaire, float bonus) {
+        super(nom, age, salaire);
+        this.bonus = bonus;
+    }
+
+    // Méthodes
+    public void afficherSalaire() {
+        // Affiche le salaire de l'employé
+        super.afficherSalaire();
+
+        // Affiche le bonus du manager
+        System.out.println("Le bonus du manager est de " + bonus);
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Création d'un objet Manager
+        Manager manager = new Manager("John Doe", 30, 3750000, 50000);
+
+        // Affichage du salaire
+        afficherSalaire(manager);
+
+    }
+
+    public static void afficherSalaire(Employe employe) {
+        employe.afficherSalaire();
+    }
+
+}
+
+
+Commentaires et explications
+
+La méthode afficherSalaire() de la classe Main accepte un paramètre de type Employe.
+Dans la ligne afficherSalaire(manager);, le paramètre manager est un objet de type Manager.
+La méthode afficherSalaire() appelle la méthode afficherSalaire() de la classe Manager.
+Utilité du concept
+
+Le polymorphisme permet de simplifier le code en permettant de traiter des objets de différentes classes de manière uniforme.
+Cela permet d'écrire du code qui est plus générique et plus extensible.
+Exemple d'utilisation
+
+Dans l'exemple de code, la méthode afficherSalaire() peut être utilisée pour afficher le salaire de n'importe quel objet de type Employe, qu'il s'agisse d'un employé ou d'un manager.
+
+### Concept 5 : Encapsulation
+
+L'encapsulation est la pratique de cacher les détails d'une classe aux utilisateurs de la classe.
+
+Exemple de code
+
+Java
+public class Employe {
+
+    // Propriétés privées
+    private String nom;
+    private int age;
+    private float salaire;
+
+    // Constructeur
+    public Employe(String nom, int age, float salaire) {
+        this.nom = nom;
+        this.age = age;
+        this.salaire = salaire;
+    }
+
+    // Méthodes publiques pour accéder aux propriétés privées
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public float getSalaire() {
+        return salaire;
+    }
+
+    public void setSalaire(float salaire) {
+        this.salaire = salaire;
+    }
+
+}
+Utilisez le code avec précaution. En savoir plus
+Commentaires et explications
+
+Les propriétés nom, age et salaire sont déclarées privées.
+Les méthodes getNom(), setNom(), getAge(), setAge() et getSalaire() sont déclarées publiques.
+Les méthodes getNom()
+Sources
+gayerie.dev/epsi-b3-javaee/javaee_web/jsf.html
+github.com/Orann/gestion_parc_attraction
