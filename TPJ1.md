@@ -458,69 +458,99 @@ public class HelloWorld {
 
 Voici un code complet en Java qui intègre tous les concepts du jour 1 :
 
-Java
-// Déclaration des variables
+
+** Déclaration des variables**
+
+```java
 int age = 25; // Variable d'âge
 String nom = "John Doe"; // Variable de nom
 double salaire = 100000.0; // Variable de salaire
+```
 
-// Affichage des variables
+** Affichage des variables **
+
+```java
 System.out.println("L'âge de l'utilisateur est de " + age);
 System.out.println("Le nom de l'utilisateur est " + nom);
 System.out.println("Le salaire de l'utilisateur est de " + salaire);
+```
 
-// Calculs
+** Calculs **
+
+```java
 int ageDansDixAns = age + 10; // Calcul de l'âge de l'utilisateur dans 10 ans
 double salaireAnnuel = salaire * 12; // Calcul du salaire annuel de l'utilisateur
+```
 
-// Affichage des résultats des calculs
+**Affichage des résultats des calculs**
+
+```java
 System.out.println("L'âge de l'utilisateur dans 10 ans sera de " + ageDansDixAns);
 System.out.println("Le salaire annuel de l'utilisateur est de " + salaireAnnuel);
+```
 
-// Condition
+** Condition**
+
+```java
 if (age >= 18) {
     System.out.println("L'utilisateur est majeur");
 } else {
     System.out.println("L'utilisateur est mineur");
 }
+```
 
-// Boucle
+** Boucle **
+
+```java
 for (int i = 0; i < 10; i++) {
     System.out.println(i);
 }
+```
 
-// Fonction
+** Fonction **
+
+```java
 public static void sayHello() {
     System.out.println("Bonjour !");
 }
+```
 
-// Appel de la fonction
+**Appel de la fonction**
+
+```java
 sayHello();
-Utilisez le code avec précaution. En savoir plus
+```
+
 Ce code comprend les éléments suivants :
 
-Variables
+**Variables**
 
 Déclaration de variables d'âge, de nom et de salaire
 Affichage des valeurs des variables
-Types de données
+
+**Types de données**
 
 Utilisation de types de données primitifs (int, String et double)
-Opérations
+
+**Opérations**
 
 Calcul de l'âge de l'utilisateur dans 10 ans
 Calcul du salaire annuel de l'utilisateur
-Conditions
+
+**Conditions**
 
 Vérification de l'âge de l'utilisateur pour déterminer s'il est majeur ou mineur
-Boucles
+
+**Boucles**
 
 Affichage des nombres de 0 à 9
-Fonctions
+
+**Fonctions**
 
 Définition d'une fonction sayHello() qui affiche un message
 Appel de la fonction sayHello()
-Commentaires
+
+**Commentaires**
 
 Chaque ligne de code est commentée pour expliquer sa fonction. Ces commentaires sont utiles pour comprendre le code et le réutiliser.
 
@@ -677,6 +707,7 @@ La méthode saisirNom() utilise Scanner pour lire une chaîne de caractères de 
 La méthode saisirAge() utilise Scanner pour lire un entier de l'entrée utilisateur.
 La méthode calculerSalaire() calcule le salaire annuel d'un employé en fonction de son âge.
 La méthode afficherResultats() affiche les résultats du calcul du salaire.
+
 Ce TP permet de mettre en pratique les concepts suivants :
 
 Déclaration de méthodes
@@ -687,16 +718,19 @@ Utilisation de Scanner pour les entrées claviers
 Ce TP peut être adapté en fonction des besoins. Par exemple, on peut ajouter des méthodes supplémentaires pour calculer d'autres informations, telles que le montant des impôts ou la durée des vacances.
 
 
-
 La méthode saisirNom() utilise Scanner pour lire une chaîne de caractères de l'entrée utilisateur.
 La méthode saisirAge() utilise Scanner pour lire un entier de l'entrée utilisateur.
 La méthode calculerSalaire() calcule le salaire annuel d'un employé en fonction de son âge.
 La méthode afficherResultats() affiche les résultats du calcul du salaire.
-Ce TP permet de mettre en pratique les concepts suivants :
 
+**Ce TP permet de mettre en pratique les concepts suivants :**
+
+```
 Déclaration de méthodes
 Appel de méthodes
 Paramètres de méthodes
 Retour de méthodes
 Utilisation de Scanner pour les entrées claviers
+```
+
 Ce TP peut être adapté en fonction des besoins. Par exemple, on peut ajouter des méthodes supplémentaires pour calculer d'autres informations, telles que le montant des impôts ou la durée des vacances.
