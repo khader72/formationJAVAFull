@@ -471,6 +471,7 @@ Spring Boot fournit des fonctionnalités pour gérer les données, telles que Sp
 
 Spring Data JPA est une API pour accéder aux données dans les bases de données relationnelles.
 
+
 Spring Data JPA
 Spring Data JPA fournit une abstraction sur les bases de données relationnelles.
 
