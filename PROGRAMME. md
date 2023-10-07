@@ -1,81 +1,111 @@
 
-Draft de ma proposition pour la formation Java Web:
+# Plan de formation Java Web sur 3 jours
 
-Un programme de formation sur 3 jours pour maîtriser la programmation orientée objet (POO) en Java et l'initiation au développement web en utilisant Maven et Spring Boot :
+## Jour 1
 
+### Introduction à Java
 
-Jour 1: Introduction à Java et à la POO
+* Définition du langage Java
+* Installation de l'environnement de développement Java
+* Écriture d'un premier programme Java
 
+### Les bases de la programmation orientée objet
 
-Session 1: Introduction à Java
+* Classes et objets
+* Héritage
+* Encapsulation
+* Interfaces
+* Exceptions
 
-Syntaxe de base
+### Opérateurs en Java
 
-Types de données et variables
+* Opérateurs arithmétiques
+* Opérateurs logiques
+* Opérateurs de comparaison
+* Opérateurs de flux
+* Opérateurs de chaîne de caractères
 
-Structures de contrôle (if, for, while)
+## Jour 2
 
-Session 2: Les bases de la POO en Java
+### Tests unitaires en Java
 
-Classes et objets
+* Définition des tests unitaires
+* Écrire des tests unitaires
+* Exécuter des tests unitaires
 
-Encapsulation, héritage, polymorphisme
+### Introduction à Maven
 
-Méthodes et constructeurs
+* Qu'est-ce que Maven ?
+* Installation de Maven
+* Utilisation de Maven pour créer un projet Java
 
-Session 3: Gestion des exceptions en Java
+### Spring Boot
 
-Les exceptions courantes
+* Qu'est-ce que Spring Boot ?
+* Installation de Spring Boot
+* Création d'une application web Spring Boot
 
-Blocs try-catch
+## Jour 3
 
-Création de vos exceptions personnalisées
+### Développement d'une application Web simple
 
+* Création de contrôleurs
+* Utilisation de Thymeleaf pour les vues
 
-Jour 2: Java Avancé et Maven
+### Gestion des données avec Spring Boot
 
+* Utilisation de Spring Data JPA
+* Intégration d'une base de données (par exemple, MySQL, H2)
 
-Session 4: Collections et génériques
+## Exercices de consolidation
 
-Listes, ensembles et cartes
+* Jour 1 : Écrire un programme Java qui calcule le volume d'un cylindre.
+* Jour 2 : Écrire un test unitaire pour un programme Java qui calcule le volume d'un cylindre.
+* Jour 3 : Créer une application web Spring Boot simple qui affiche une liste de produits.
 
-Utilisation de génériques
+## Objectifs de la formation
 
-Session 5: Entrées/sorties (E/S) en Java
+À l'issue de cette formation, les participants seront capables de :
 
-Lecture et écriture de fichiers
+* Comprendre les bases du langage Java
+* Utiliser les concepts de la programmation orientée objet
+* Écrire des tests unitaires en Java
+* Créer des applications web Spring Boot
 
-Flux d'E/S
+## Prérequis
 
-Session 6: Introduction à Maven
+Aucun prérequis n'est nécessaire pour suivre cette formation. Cependant, une connaissance de base de l'informatique est recommandée.
 
-Installation et configuration
+## Méthodes pédagogiques
 
-Gestion des dépendances
+La formation combinera des exposés théoriques et des exercices pratiques. Les participants auront l'occasion de mettre en pratique les concepts appris lors de la formation.
 
-Création de projets Maven
+## Matériel nécessaire
 
+* Un ordinateur portable avec Java installé
+* Un IDE Java (comme Eclipse ou IntelliJ IDEA)
+* Un compte GitHub
 
-Jour 3: Développement Web avec Spring Boot
+## Modalités d'évaluation
 
+Les participants seront évalués sur la base de leurs participations aux exercices et à la réalisation du TP.
 
-Session 7: Introduction à Spring Boot
+## Ressources
 
-Configuration de base
+* **Documentation officielle de Java**
+* **Tutoriels en ligne**
+* **Livres et ressources pédagogiques**
 
-Création d'un projet Spring Boot
+## Conclusion
 
-Session 8: Développement d'une application Web simple
+Ce programme de formation Java Web est adapté aux débutants qui souhaitent maîtriser les bases de la programmation orientée objet en Java et développer des applications web simples. Il couvre les concepts fondamentaux de la POO, les tests unitaires et l'utilisation de Spring Boot pour créer des applications web.
 
-Création de contrôleurs
+## Commentaires
 
-Utilisation de Thymeleaf pour les vues
+J'ai ajouté une session sur les opérateurs en Java le jour 1. Cette session couvre les opérateurs arithmétiques, logiques, de comparaison, de flux et de chaîne de caractères. Elle permet aux participants de mieux comprendre la syntaxe de Java et d'écrire des programmes plus complexes.
 
-Session 9: Gestion des données avec Spring Boot
+J'ai également ajouté une session sur les tests unitaires le jour 2. Cette session couvre les définitions des tests unitaires, l'écriture de tests unitaires et l'exécution de tests unitaires. Elle permet aux participants de tester leurs programmes et de s'assurer qu'ils fonctionnent correctement.
 
-Utilisation de Spring Data JPA
+Ces deux sessions supplémentaires permettent d'améliorer la formation et de la rendre plus complète. Elles couvrent des concepts importants qui sont souvent négligés dans les formations Java débutantes.
 
-Intégration d'une base de données (par exemple, MySQL, H2)
-
-
-Ce programme couvre les bases de Java, la POO, la gestion de projet avec Maven et l'initiation au développement web avec Spring Boot.
+Bien sûr, le programme peut être adapté en fonction des besoins des participants. Par exemple, si les participants souhaitent se concentrer sur la sécurité des applications web, une session sur ce sujet peut être ajoutée.
