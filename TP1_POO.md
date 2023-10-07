@@ -444,3 +444,141 @@ Utilité du concept
 
 La composition permet de modéliser des objets complexes composés de plusieurs objets plus simples.
 Cela permet d'écrire du code
+
+
+### Concept 8 : Agrégation
+
+L'agrégation est une relation entre deux classes où une classe, la classe agrégée, contient une référence à une autre classe, la classe agrégée.
+
+Exemple de code
+
+Java
+public class Voiture {
+
+    // Propriétés
+    private Moteur moteur;
+
+    // Constructeur
+    public Voiture(Moteur moteur) {
+        this.moteur = moteur;
+    }
+
+    // Méthodes
+    public void rouler() {
+        moteur.demarrer();
+        moteur.accelerer();
+    }
+
+}
+
+public class Moteur {
+
+    // Propriétés
+    private int cylindre;
+
+    // Constructeur
+    public Moteur(int cylindre) {
+        this.cylindre = cylindre;
+    }
+
+    // Méthodes
+    public void demarrer() {
+        System.out.println("Le moteur démarre.");
+    }
+
+    public void accelerer() {
+        System.out.println("Le moteur accélère.");
+    }
+
+}
+Utilisez le code avec précaution. En savoir plus
+Commentaires et explications
+
+La classe Voiture contient une référence à la classe Moteur.
+La classe Moteur n'est pas une composante de la classe Voiture.
+Utilité du concept
+
+L'agrégation permet de modéliser des objets complexes composés de plusieurs objets plus simples.
+Cela permet d'écrire du code qui est plus flexible.
+Exemple d'utilisation
+
+Dans l'exemple de code, la classe Voiture représente un objet complexe composé d'un objet Moteur.
+La classe Moteur n'est pas une composante de la classe Voiture, elle peut être remplacée par une autre classe Moteur.
+
+### Concept 9 : Interface
+
+Une interface est une définition d'un ensemble de méthodes.
+
+Exemple de code
+
+Java
+public interface Vehicule {
+
+    void rouler();
+
+    void freiner();
+
+}
+
+public class Voiture implements Vehicule {
+
+    // Propriétés
+    private String marque;
+    private String modele;
+
+    // Constructeur
+    public Voiture(String marque, String modele) {
+        this.marque = marque;
+        this.modele = modele;
+    }
+
+    // Méthodes implémentées
+    @Override
+    public void rouler() {
+        System.out.println("La voiture roule.");
+    }
+
+    @Override
+    public void freiner() {
+        System.out.println("La voiture freine.");
+    }
+
+}
+
+public class Moto implements Vehicule {
+
+    // Propriétés
+    private String marque;
+    private String modele;
+
+    // Constructeur
+    public Moto(String marque, String modele) {
+        this.marque = marque;
+        this.modele = modele;
+    }
+
+    // Méthodes implémentées
+    @Override
+    public void rouler() {
+        System.out.println("La moto roule.");
+    }
+
+    @Override
+    public void freiner() {
+        System.out.println("La moto freine.");
+    }
+
+}
+Utilisez le code avec précaution. En savoir plus
+Commentaires et explications
+
+L'interface Vehicule définit les méthodes rouler() et freiner().
+Les classes Voiture et Moto implémentent l'interface Vehicule.
+Utilité du concept
+
+Les interfaces permettent de définir un contrat entre les classes.
+Cela permet d'écrire du code qui est plus flexible et plus réutilisable.
+Exemple d'utilisation
+
+Dans l'exemple de code, l'interface Vehicule définit le comportement de base d'un véhicule.
+Les classes Voiture et Moto implémentent l'interface Vehicule pour fournir des implementations spécifiques de ce comportement.
