@@ -831,7 +831,101 @@ Commentaire :
 
 Gradle offre une flexibilité et une puissance accrues dans la définition des tâches de construction par rapport à Maven.
 
-33. RESTful Web Services:
+## 33. Networking (Réseau) :
+
+Définition : En Java, le package java.net offre des classes et des interfaces pour la communication réseau, permettant aux applications d'interagir via les protocoles TCP/IP. Cela inclut la création de connexions, la transmission de données et la gestion des requêtes réseau.
+
+Utilisation de Sockets TCP :
+Les sockets TCP sont utilisés pour établir des connexions réseau fiables et bidirectionnelles entre deux appareils. Voici comment créer un serveur et un client TCP en Java.
+
+Exemple de Code - Serveur TCP :
+
+java
+Copy code
+import java.io.*;
+import java.net.*;
+
+public class ServeurTCP {
+    public static void main(String[] args) throws IOException {
+        ServerSocket serverSocket = new ServerSocket(12345);
+        System.out.println("Serveur en attente de connexions...");
+
+        Socket clientSocket = serverSocket.accept();
+        System.out.println("Connexion établie avec le client.");
+
+        PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
+        BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+
+        String messageDuClient;
+        while ((messageDuClient = in.readLine()) != null) {
+            System.out.println("Client : " + messageDuClient);
+            out.println("Serveur : Message reçu -> " + messageDuClient);
+        }
+
+        clientSocket.close();
+        serverSocket.close();
+    }
+}
+Exemple de Code - Client TCP :
+
+java
+Copy code
+import java.io.*;
+import java.net.*;
+
+public class ClientTCP {
+    public static void main(String[] args) throws IOException {
+        Socket socket = new Socket("localhost", 12345);
+
+        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+        BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String message;
+        while (true) {
+            System.out.print("Client : ");
+            message = reader.readLine();
+            out.println(message);
+
+            String reponseDuServeur = in.readLine();
+            System.out.println("Serveur : " + reponseDuServeur);
+
+            if ("bye".equalsIgnoreCase(message)) {
+                break;
+            }
+        }
+
+        socket.close();
+    }
+}
+Utilisation de l'URL :
+La classe URL de Java permet d'accéder aux ressources via leur adresse URL.
+
+Exemple de Code - Accès à une URL :
+
+java
+Copy code
+import java.io.*;
+import java.net.*;
+
+public class AccesURL {
+    public static void main(String[] args) throws IOException {
+        URL url = new URL("https://www.example.com");
+        BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+
+        String inputLine;
+        while ((inputLine = in.readLine()) != null) {
+            System.out.println(inputLine);
+        }
+
+        in.close();
+    }
+}
+Commentaire :
+
+Les sockets TCP sont utilisés pour établir des connexions réseau directes entre les machines, tandis que l'accès à l'URL permet d'interagir avec des ressources en ligne via des protocoles HTTP, HTTPS, FTP, etc. Les applications réseau Java sont essentielles pour les communications à distance, le partage de données et l'accès aux ressources en ligne.
+
+33bis. RESTful Web Services:
 Définition : Les services web RESTful sont des services web basés sur les principes de l'architecture REST (Representational State Transfer). Ils utilisent des méthodes HTTP (GET, POST, PUT, DELETE) pour effectuer des opérations sur des ressources, généralement en format JSON ou XML.
 
 Exemple de Code :
@@ -852,6 +946,7 @@ Les WebSockets impliquent des classes Java côté serveur et JavaScript côté c
 Commentaire :
 
 Les WebSockets sont utilisés dans les applications nécessitant des mises à jour en temps réel, comme les applications de chat et les tableaux de bord en direct.
+
 
 35. Spring Boot:
 Définition : Spring Boot est un projet de la famille Spring Framework qui simplifie le processus de création d'applications Java autonomes et de production prêtes à l'emploi. Il offre des conventions intelligentes par défaut et des configurations automatiques.
