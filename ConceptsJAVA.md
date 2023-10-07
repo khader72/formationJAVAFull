@@ -705,3 +705,137 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 Commentaire :
 
 Spring Security est essentiel pour garantir la sécurité des applications web Java en protégeant contre diverses menaces.
+
+37. Microservices:
+Définition : Les microservices sont une architecture logicielle où une application est divisée en petits services indépendants, chacun exécutant une tâche spécifique. Ces services sont souvent déployés indépendamment et communiquent entre eux via des API REST ou d'autres protocoles.
+
+Exemple de Code (avec Spring Boot) :
+
+Service 1 - Service de Commandes
+
+java
+Copy code
+@RestController
+public class CommandeController {
+    @GetMapping("/commandes/{id}")
+    public Commande getCommande(@PathVariable Long id) {
+        // Logique pour récupérer la commande avec l'ID donné
+        // Retourne la commande au format JSON
+    }
+}
+Service 2 - Service de Paiement
+
+java
+Copy code
+@RestController
+public class PaiementController {
+    @PostMapping("/paiements")
+    public String effectuerPaiement(@RequestBody Paiement paiement) {
+        // Logique pour effectuer le paiement
+        // Retourne un message de confirmation
+    }
+}
+Commentaire :
+
+Les microservices permettent une évolutivité et un déploiement indépendant, facilitant la gestion des applications complexes.
+
+38. Docker:
+Définition : Docker est une plateforme de conteneurisation permettant d'emballer des applications et leurs dépendances dans des conteneurs légers et portables. Ces conteneurs peuvent être exécutés sur n'importe quel système compatible Docker, garantissant la portabilité des applications.
+
+Exemple de Code :
+
+Exemple de fichier Dockerfile pour une application Java Spring Boot :
+
+Dockerfile
+Copy code
+FROM openjdk:11-jre-slim
+WORKDIR /app
+COPY target/mon-application.jar mon-application.jar
+ENTRYPOINT ["java", "-jar", "mon-application.jar"]
+Commentaire :
+
+Docker simplifie le déploiement des applications en garantissant leur exécution cohérente sur divers environnements.
+
+39. Kubernetes:
+Définition : Kubernetes est une plateforme open-source de gestion d'orchestration de conteneurs. Il automatise le déploiement, la mise à l'échelle et la gestion des applications conteneurisées, offrant ainsi un environnement hautement disponible et extensible.
+
+Exemple de Configuration YAML :
+
+yaml
+Copy code
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mon-pod
+spec:
+  containers:
+  - name: mon-container
+    image: mon-image:latest
+    ports:
+    - containerPort: 8080
+Commentaire :
+
+Kubernetes facilite l'exploitation des applications conteneurisées à grande échelle dans des environnements de production.
+
+40. Apache Kafka:
+Définition : Apache Kafka est une plateforme de diffusion de données en temps réel. Il est utilisé pour la diffusion, la collecte et le stockage de flux de données en temps réel provenant de diverses sources, permettant ainsi le traitement en continu et la prise de décision basée sur des données en temps réel.
+
+Exemple de Code (Producteur Kafka) :
+
+java
+Copy code
+import org.apache.kafka.clients.producer.*;
+import java.util.Properties;
+
+public class ProducteurKafka {
+    public static void main(String[] args) {
+        String bootstrapServers = "localhost:9092";
+        String topic = "mon-topic";
+
+        Properties properties = new Properties();
+        properties.put("bootstrap.servers", bootstrapServers);
+        properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+
+        Producer<String, String> producteur = new KafkaProducer<>(properties);
+
+        ProducerRecord<String, String> record = new ProducerRecord<>(topic, "clef", "valeur");
+
+        producteur.send(record);
+        producteur.close();
+    }
+}
+Exemple de Code (Consommateur Kafka) :
+
+java
+Copy code
+import org.apache.kafka.clients.consumer.*;
+import java.util.Collections;
+import java.util.Properties;
+
+public class ConsommateurKafka {
+    public static void main(String[] args) {
+        String bootstrapServers = "localhost:9092";
+        String groupId = "mon-groupe";
+        String topic = "mon-topic";
+
+        Properties properties = new Properties();
+        properties.put("bootstrap.servers", bootstrapServers);
+        properties.put("group.id", groupId);
+        properties.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+        properties.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+
+        Consumer<String, String> consommateur = new KafkaConsumer<>(properties);
+        consommateur.subscribe(Collections.singletonList(topic));
+
+        while (true) {
+            ConsumerRecords<String, String> records = consommateur.poll(100);
+            for (ConsumerRecord<String, String> record : records) {
+                System.out.printf("Clé: %s, Valeur: %s%n", record.key(), record.value());
+            }
+        }
+    }
+}
+Commentaire :
+
+Apache Kafka est utilisé dans les architectures de microservices et les pipelines de traitement de données en temps réel.
