@@ -95,3 +95,36 @@ public class SommeTest {
 
 }
 ```
+
+**Execution**
+
+```
+├── src
+│   └── main
+│       └── java
+│           └── com
+│               └── tests
+│                   └── SommeTest.java
+└── test
+    └── resources
+        └── log4j.properties
+
+```
+
+```
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.tests.SommeTest
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.055 s
+[INFO] Finished at: 2023-07-20T15:39:50+02:00
+[INFO] ------------------------------------------------------------------------
+```
+## Résultat
+
+Les deux tests ont réussi.
+
+## Commentaires
+
+Les tests sont écrits dans un fichier .java avec l'annotation @Test. Chaque test contient une méthode qui teste...
+
