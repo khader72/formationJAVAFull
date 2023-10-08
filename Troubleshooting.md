@@ -10,7 +10,7 @@ Contexte : Le fichier pom.xml spécifie une version de Java incompatible avec ce
 
 Solution : Mettez à jour la version de Java dans le fichier pom.xml pour correspondre à celle installée sur votre système.
 
-xml
+```xml
 
 <!-- Problème de version de Java dans le fichier pom.xml -->
 <build>
@@ -26,6 +26,7 @@ xml
         </plugin>
     </plugins>
 </build>
+```
 
 ## 2. Problématique : Erreurs de Dépendances dans un Projet Maven
 
@@ -35,7 +36,7 @@ Contexte : Le fichier pom.xml contient des dépendances avec des versions incomp
 
 Solution : Mettez à jour les dépendances pour utiliser des versions compatibles ou utilisez un outil de gestion des dépendances pour résoudre les conflits.
 
-xml
+```xml
 
 <!-- Problème de conflit de dépendances dans le fichier pom.xml -->
 <dependencies>
@@ -50,6 +51,7 @@ xml
         <version>1.5.0</version> <!-- Mettez à jour la version pour résoudre le conflit -->
     </dependency>
 </dependencies>
+```
 
 ## 3. Problématique : Erreurs de Syntaxe HTML
 
@@ -59,21 +61,25 @@ Contexte : Le fichier HTML contient des balises qui ne sont pas correctement fer
 
 Solution : Assurez-vous que toutes les balises HTML sont correctement emboîtées et fermées.
 
-html
+```html
 
 <!-- Problème de balises mal fermées dans un fichier HTML -->
 <div>
     <p>Contenu du paragraphe</p>
     <div>Contenu de la division</div>
 </div>
-4. Problématique : Problèmes de Sélection CSS
+```
+
+## 4. Problématique : Problèmes de Sélection CSS
+
+
 Problème : Des sélecteurs CSS incorrects ne ciblent pas les éléments souhaités.
 
 Contexte : Le fichier CSS contient des sélecteurs qui ne correspondent pas aux éléments prévus.
 
 Solution : Utilisez les sélecteurs CSS appropriés pour cibler les éléments spécifiques que vous souhaitez styliser.
 
-css
+```css
 
 /* Problème de sélecteur CSS incorrect */
 div {
@@ -82,14 +88,17 @@ div {
 div p {
     color: #0000ff;
 }
-5. Problématique : Problèmes d'Asynchrone en JavaScript
+```
+
+## 5. Problématique : Problèmes d'Asynchrone en JavaScript
+
 Problème : Les opérations asynchrones, comme les requêtes AJAX, ne se comportent pas comme prévu.
 
 Contexte : Le code JavaScript effectue des opérations asynchrones sans gérer correctement l'asynchronicité.
 
 Solution : Utilisez les promesses, les callbacks ou les mots clés async/await pour gérer les opérations asynchrones et garantir l'ordre d'exécution.
 
-javascript
+```javascript
 
 // Problème d'asynchronicité dans une requête AJAX
 console.log("Début");
@@ -98,14 +107,17 @@ fetch('https://api.example.com/data')
     .then(data => console.log(data))
     .catch(error => console.error(error));
 console.log("Fin");
-6. Problématique : Problèmes de Scope en JavaScript
+```
+
+## 6. Problématique : Problèmes de Scope en JavaScript
+
 Problème : Les variables JavaScript ne sont pas dans la portée attendue, entraînant des erreurs ou des résultats inattendus.
 
 Contexte : Les variables sont déclarées avec var, créant une portée de fonction au lieu de portée de bloc.
 
 Solution : Utilisez let ou const pour déclarer des variables avec une portée de bloc appropriée.
 
-javascript
+```javascript
 
 // Problème de portée de variable
 function exampleFunction() {
@@ -115,14 +127,17 @@ function exampleFunction() {
     console.log(localVar);
 }
 exampleFunction();
-7. Problématique : Problèmes de Performances en JavaScript
+```
+
+## 7. Problématique : Problèmes de Performances en JavaScript
+
 Problème : Les opérations intensives en JavaScript ralentissent l'application.
 
 Contexte : Une boucle intensive ou des calculs complexes peuvent entraîner des problèmes de performances.
 
 Solution : Utilisez des techniques telles que le découpage des tâches, les Web Workers ou l'optimisation des algorithmes pour améliorer les performances.
 
-javascript
+```javascript
 
 // Problème de performances avec une boucle
 console.log("Début");
@@ -130,4 +145,6 @@ for (let i = 0; i < 1000000; i++) {
     // Effectuez des opérations intensives ici
 }
 console.log("Fin");
+```
+
 Chaque exemple est accompagné d'une explication du problème, du contexte dans lequel il peut survenir et de la solution appropriée pour résoudre le problème. Ces détails aident à comprendre le contexte du problème et à appliquer la solution de manière appropriée.
