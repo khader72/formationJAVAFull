@@ -1,7 +1,8 @@
-# formationJAVAFull
+# Formation JAVA Web
+
 Formation  JAVA  Full
 
-## JAVADOC
+## JavaDoc
 
 ##  TOP  Sites WebS
 
@@ -12,4 +13,4 @@ Formation  JAVA  Full
 
 ## Les Outils JAVA JEE
 
-## IDE JAVA en Ligne /WEB
+## IDE JAVA en Ligne /Web
