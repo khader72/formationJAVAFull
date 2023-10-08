@@ -128,10 +128,13 @@ Les stratégies de chargement
 
 Les différentes stratégies de chargement disponibles sont les suivantes :
 
-EAGER : toutes les entités liées sont chargées avec l'entité principale.
-LAZY : les entités liées ne sont chargées que si elles sont explicitement demandées.
-JOIN : les entités liées sont chargées en même temps que l'entité principale, mais dans une jointure SQL distincte.
-FETCH : les entités liées sont chargées en même temps que l'entité principale, mais dans une jointure SQL avec l'entité principale.
+**EAGER :** toutes les entités liées sont chargées avec l'entité principale.
+
+**LAZY :** les entités liées ne sont chargées que si elles sont explicitement demandées.
+
+**JOIN :** les entités liées sont chargées en même temps que l'entité principale, mais dans une jointure SQL distincte.
+
+**FETCH :** les entités liées sont chargées en même temps que l'entité principale, mais dans une jointure SQL avec l'entité principale.
 
 **Justification**
 
@@ -146,7 +149,8 @@ Exemples
 
 Supposons que nous avons une classe Article qui a une relation one-to-many avec une classe Commentaire. La stratégie EAGER est la meilleure option dans ce cas, car elle garantit que tous les commentaires associés à un article sont chargés en même temps.
 
-Java
+
+```Java
 @Entity
 public class Article {
 
@@ -160,10 +164,12 @@ public class Article {
     @Fetch(FetchMode.EAGER)
     private List<Commentaire> commentaires;
 }
+```
 
 Code
 
-Java
+
+```Java
 // Récupération d'un article
 Article article = em.find(Article.class, 1L);
 
@@ -172,11 +178,13 @@ for (Commentaire commentaire : article.getCommentaires()) {
     System.out.println(commentaire.getContenu());
 }
 
+```
 **Relation many-to-one**
 
 Supposons que nous avons une classe Client qui a une relation many-to-one avec une classe Commande. La stratégie LAZY est la meilleure option dans ce cas, car elle ne charge les commandes que si elles sont explicitement demandées.
 
-Java
+
+```Java
 @Entity
 public class Client {
 
@@ -191,9 +199,12 @@ public class Client {
     private List<Commande> commandes;
 }
 
-Code
+```
 
-Java
+
+
+
+```Java
 // Récupération d'un client
 Client client = em.find(Client.class, 1L);
 
@@ -202,7 +213,9 @@ for (Commande commande : client.getCommandes()) {
     System.out.println(commande.getDate());
 }
 
-Conclusion
+```
+
+**Conclusion**
 
 Le choix de la stratégie de chargement appropriée dans JPA est important pour garantir les meilleures performances et la cohérence de votre application. Il est important de peser les différents facteurs impliqués avant de prendre une décision.
 
