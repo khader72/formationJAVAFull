@@ -147,8 +147,9 @@ for (let i = 0; i < 1000000; i++) {
 console.log("Fin");
 ```
 
-8. Problématique : Problèmes d'Asynchronisme JavaScript
-javascript
+## 8. Problématique : Problèmes d'Asynchronisme JavaScript
+
+```javascript
 
 // Problème d'opération asynchrone mal gérée
 async function fetchData() {
@@ -158,10 +159,13 @@ async function fetchData() {
     // Traitement des données
     processData(data);
 }
+```
+
 Commentaire : Assurez-vous d'utiliser async/await ou les promesses (Promise) pour gérer les opérations asynchrones. Attendez que les opérations asynchrones se terminent avant de continuer le traitement.
 
-9. Problématique : Erreur dans les Requêtes AJAX
-javascript
+## 9. Problématique : Erreur dans les Requêtes AJAX
+
+```javascript
 
 // Erreur dans la requête AJAX
 $.ajax({
@@ -175,10 +179,13 @@ $.ajax({
         // Gestion de l'erreur
     }
 });
+```
+
 Commentaire : Vérifiez l'URL, la méthode et les données envoyées dans la requête AJAX. Assurez-vous que le serveur répond correctement et gérez les erreurs de manière appropriée.
 
-10. Problématique : Problèmes de Performance
-java
+## 10. Problématique : Problèmes de Performance
+
+```java
 
 public class PerformanceOptimization {
     public static void main(String[] args) {
@@ -195,10 +202,13 @@ public class PerformanceOptimization {
         return "Result: " + value;
     }
 }
+```
+
 Commentaire : Identifiez les parties du code qui sont lentes en utilisant des outils de profilage. Optimisez les méthodes qui prennent beaucoup de temps en réduisant les opérations coûteuses ou en utilisant des techniques de mise en cache.
 
-11. Problématique : Problèmes de Gestion de la Mémoire
-java
+## 11. Problématique : Problèmes de Gestion de la Mémoire
+
+```java
 
 public class MemoryLeakExample {
     private static List<Object> list = new ArrayList<>();
@@ -210,10 +220,13 @@ public class MemoryLeakExample {
         }
     }
 }
+```
+
 Commentaire : Assurez-vous de libérer les ressources correctement après les avoir utilisées. Dans cet exemple, la liste list continue de croître, ce qui entraîne une fuite de mémoire. Videz ou libérez les ressources non nécessaires pour éviter les fuites de mémoire.
 
-12. Problématique : Problèmes de Sécurité dans les Requêtes HTTP
-javascript
+## 12. Problématique : Problèmes de Sécurité dans les Requêtes HTTP
+
+```javascript
 
 // Envoi de données sensibles en clair dans les requêtes HTTP
 fetch('https://api.example.com/login', {
@@ -227,10 +240,13 @@ fetch('https://api.example.com/login', {
 .then(data => {
     // Traitement de la réponse
 });
+```
+
 Commentaire : Les données sensibles, telles que les mots de passe, ne doivent pas être envoyées en clair dans les requêtes HTTP. Utilisez HTTPS pour chiffrer les données sensibles et n'envoyez jamais d'informations sensibles dans les paramètres d'URL.
 
-13. Problématique : Erreur de Configuration du Serveur d'Application
-xml
+## 13. Problématique : Erreur de Configuration du Serveur d'Application
+
+```xml
 
 <web-app>
     <!-- Erreur de configuration dans le fichier web.xml -->
@@ -243,21 +259,30 @@ xml
         <url-pattern>/myservlet</url-pattern>
     </servlet-mapping>
 </web-app>
+```
+
 Commentaire : Dans ce cas, il peut y avoir une erreur de configuration dans le fichier web.xml. Assurez-vous que les balises servlet et servlet-mapping sont correctement configurées et correspondent aux classes et URL appropriées.
 
-14. Problématique : Problèmes de Déploiement Docker
-dockerfile
+## 14. Problématique : Problèmes de Déploiement Docker
+
+```dockerfile
 
 FROM openjdk:11-jre-slim
 COPY . /app
 WORKDIR /app
 RUN mvn clean install
-# Problème de construction du conteneur
+```
+
+ **Problème de construction du conteneur**
+ ```
 CMD ["java", "-jar", "app.jar"]
+```
 Commentaire : Il peut y avoir des erreurs de configuration dans le fichier Dockerfile. Assurez-vous que les étapes de construction et d'exécution du conteneur sont correctes. Vérifiez également que toutes les dépendances sont correctement installées.
 
-15. Problématique : Problèmes de Performance dans les Requêtes de Base de Données
-java
+## 15. Problématique : Problèmes de Performance dans les Requêtes de Base de Données
+
+```java
+
 
 @Repository
 public class DataRepository {
@@ -271,10 +296,13 @@ public class DataRepository {
                 new Data(resultSet.getInt("id"), resultSet.getString("name")));
     }
 }
+```
+
 Commentaire : Dans cet exemple, la requête SQL est lente en raison de l'absence d'index sur la colonne id. Ajoutez un index à la colonne utilisée dans la clause WHERE pour améliorer les performances des requêtes.
 
-16. Problématique : Problèmes de Sécurité dans les Sessions Utilisateurs
-java
+## 16. Problématique : Problèmes de Sécurité dans les Sessions Utilisateurs
+
+```java
 
 @Configuration
 @EnableWebSecurity
@@ -285,10 +313,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.sessionManagement().sessionFixation().none();
     }
 }
+```
+
 Commentaire : Dans cet exemple, la gestion des sessions utilisateur peut être vulnérable au vol de session. Utilisez des tokens sécurisés pour les sessions utilisateur et assurez-vous que les cookies de session sont sécurisés et HTTPOnly.
 
-17. Problématique : Problèmes de Cache dans l'Application
-java
+## 17. Problématique : Problèmes de Cache dans l'Application
+
+```java
 
 @Service
 public class DataService {
@@ -307,10 +338,13 @@ public class DataService {
         return data;
     }
 }
+```
+
 Commentaire : Le problème ici est que le cache n'est pas mis à jour correctement lorsqu'une nouvelle donnée est récupérée de la base de données. Assurez-vous que les méthodes de mise à jour du cache sont correctement implémentées pour refléter les données réelles de la base de données.
 
-18. Problématique : Problèmes de Cross-Origin Resource Sharing (CORS)
-java
+## 18. Problématique : Problèmes de Cross-Origin Resource Sharing (CORS)
+
+```java
 
 @Configuration
 public class CorsConfig implements WebMvcConfigurer {
@@ -322,10 +356,13 @@ public class CorsConfig implements WebMvcConfigurer {
                 .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
 }
+```
+
 Commentaire : Dans cet exemple, les configurations CORS autorisent uniquement les requêtes provenant de http://example.com. Assurez-vous que les origines autorisées et les méthodes HTTP sont correctement spécifiées pour résoudre les problèmes de CORS.
 
-19. Problématique : Erreur dans les Transformations de Données
-java
+## 19. Problématique : Erreur dans les Transformations de Données
+
+```java
 
 public class DataTransformer {
     public String transformToJson(Data data) {
@@ -333,10 +370,13 @@ public class DataTransformer {
         return new ObjectMapper().writeValueAsString(data);
     }
 }
+```
+
 Commentaire : Le problème ici est que la transformation JSON peut échouer en raison de données incorrectes ou mal formatées. Assurez-vous que les données d'entrée sont au format attendu avant de tenter la transformation. Ajoutez également des gestionnaires d'erreurs appropriés pour gérer les erreurs de transformation.
 
-20. Problématique : Problèmes de Routage dans une Application Web
-java
+## 20. Problématique : Problèmes de Routage dans une Application Web
+
+```java
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
@@ -347,7 +387,11 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addViewController("/login").setViewName("login");
     }
 }
-Commentaire : Dans cet exemple, les chemins /home et /login ne sont pas correctement mappés aux vues appropriées. Assurez-vous que les chemins et les composants sont correctement configurés dans les fichiers de routage pour résoudre les problèmes de routage.
+```
+
+**Commentaire :**
+
+ Dans cet exemple, les chemins /home et /login ne sont pas correctement mappés aux vues appropriées. Assurez-vous que les chemins et les composants sont correctement configurés dans les fichiers de routage pour résoudre les problèmes de routage.
 
 Chaque exemple est accompagné d'un commentaire expliquant la problématique et la solution. Ces exemples couvrent divers aspects du dépannage en Java, Spring Boot, Maven, HTML, CSS et JavaScript, avec des solutions pratiques et des conseils pour approfondir chaque sujet.
 
