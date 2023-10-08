@@ -1,4 +1,4 @@
-# Cours Complet sur Java EE
+# Cours Complet sur JAVA JEE
 
 ## Chapitre 1: Introduction à Java
 
