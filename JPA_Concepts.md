@@ -2,20 +2,23 @@
 
 En plus des stratégies de chargement et de génération d'identifiants, JPA fournit plusieurs autres concepts importants.
 
-**Les persister`
+**Les persister**
 
 La méthode persist() est utilisée pour enregistrer une entité dans la base de données.
 
-**Les flush()`
+**Les flush()**
+
 La méthode flush() est utilisée pour forcer l'enregistrement des entités persistées dans la base de données.
 
-**Les refresh()`
+**Les refresh()**
+
 La méthode refresh() est utilisée pour recharger une entité à partir de la base de données.
 
-**Les remove()`
+**Les remove()**
+
 La méthode remove() est utilisée pour supprimer une entité de la base de données.
 
-**Les merge()`
+**Les merge()**
 La méthode merge() est utilisée pour fusionner une entité avec une entité existante dans la base de données.
 
 Le lien avec Spring Boot
