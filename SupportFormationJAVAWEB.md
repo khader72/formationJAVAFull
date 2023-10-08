@@ -159,6 +159,190 @@ Ces IDEs offrent des environnements puissants et conviviaux pour le développeme
 
 Java continue d'être l'un des langages de programmation les plus populaires et polyvalents, utilisé dans divers domaines pour ses performances, sa portabilité et son écosystème robuste, avec un intérêt particulier dans le secteur des télécommunications pour ses capacités de communication en temps réel.
 
+### Synthèse sur  Java
+
+- Indépendant de la plateforme ou portable
+- Langage orienté objet
+- Sécurité 
+- API riche
+- Excellents environnements de développement (IDE)
+- Omniprésent 
+   - Applications Web (Java EE (JSP, Servlets), Spring, Struts..)
+   - Applications mobiles (Android) 
+   - Microservices (Spring Boot)
+
+### Indépendance de la Plateforme
+- Écrire une fois, exécuter partout
+![alt text](images/java-write-once-run-anywhere.png)
+- Le bytecode Java est l'instruction de la machine virtuelle Java
+
+
+```mermaid
+graph TD
+A[Code Java] -->|Compilé| B(Bytecode)
+B --> C{Exécution}
+C -->|bytecode| D[Machine virtuelle Java Windows] 
+D --> K[Instructions Windows]
+C -->|bytecode| E[Machine virtuelle Java Unix]
+E --> L[Instructions Unix]
+C -->|bytecode| F[Machine virtuelle Java Linux]
+F --> M[Instructions Linux]
+C -->|bytecode| G[Autre plateforme JVM]
+G --> N[Instructions Linux]
+```
+
+**JDK vs JVM VS JRE**
+
+- JVM (Machine virtuelle Java)
+  Exécute le bytecode Java.
+- JRE
+    JVM + Bibliothèques + Autres composants (pour exécuter les applets et autres applications Java)
+- JDK
+   JRE + Compilateurs + Débogueurs
+- ClassLoader
+    Recherche et charge les classes Java !
+
+Trois types
+
+Chargeur de classes système - Charge toutes les classes d'application depuis le CLASSPATH
+Chargeur de classes d'extension - Charge toutes les classes depuis le répertoire d'extension
+Chargeur de classes Bootstrap - Charge tous les fichiers de base Java
+Ordre d'exécution des ClassLoaders
+
+Lorsque la JVM doit trouver une classe, elle commence par le Chargeur de classes système.
+Si elle n'est pas trouvée, elle vérifie avec le Chargeur de classes d'extension.
+Si elle n'est toujours pas trouvée, elle passe au Chargeur de classes Bootstrap.
+Si une classe n'est toujours pas trouvée, une ClassNotFoundException est levée.
+
+**Premier Programme Java**
+
+```java
+
+public class BonjourLeMonde {
+    public static void main(String[] args) {
+        System.out.println("Bonjour le Monde");
+    }
+}```
+
+Notes
+
+Chaque ligne de code que nous écrivons en Java fait partie de quelque chose appelé une Classe. Nous parlerons de Classes plus tard.
+La première ligne définit une classe publique appelée BonjourLeMonde. Tout le code dans une classe est entre { et }.
+Lorsqu'un programme s'exécute, Java doit savoir quelle ligne de code doit être exécutée en premier. public static void main(String[] args) est la première méthode qui est exécutée lorsqu'un programme est exécuté.
+Java, comme tout autre langage de programmation, est précis sur la syntaxe !!
+
+**Utilisation de Java et JavaC**
+
+Il y a deux étapes pour exécuter un programme Java
+
+- Compilation
+- Exécution
+
+**Compilation**
+
+Nous utilisons javac pour compiler le code Java.
+
+Ouvrez l'invite de commande/terminal et allez dans le dossier où se trouve le fichier HelloWorld.java.
+
+Exécutez la commande ci-dessous
+
+```
+javac HelloWorld.java
+```
+
+Vous devriez voir deux fichiers HelloWorld.java et HelloWorld.class dans le dossier.
+
+HelloWorld.class contient le bytecode Java.
+
+Exécution
+Maintenant, nous pouvons exécuter le programme en utilisant la JVM.
+Exécutez la commande ci-dessous
+```
+java HelloWorld
+```
+
+Vous devriez voir la sortie "Bonjour le Monde" imprimée dans la console.
+
+**Classe et Objet**
+
+Qu'est-ce qu'une classe ?
+Définir une instance d'une classe - un objet
+
+Appeler une méthode sur l'objet
+
+**Variables**
+
+La valeur d'une variable change au cours de l'exécution d'un programme.
+
+```java
+
+int nombre;
+nombre = 5;
+System.out.println(nombre);//5
+nombre = nombre + 2;
+System.out.println(nombre);//7
+nombre = nombre + 2;
+System.out.println(nombre);//9
+```
+
+**Déclaration et Initialisation des Variables**
+
+La déclaration donne un nom et un type à une variable
+
+TYPE nomDeLaVariable;
+Conseils
+Deux ou plusieurs variables du même type peuvent être déclarées ensemble.
+Une variable peut être locale ou globale. Les variables locales ne peuvent être référencées (c'est-à-dire, elles sont valides) que dans la portée de leur méthode (ou fonction).
+Les six types numériques en Java sont signés.
+
+**Variables Primitives**
+
+Variables qui stockent une valeur.
+
+Java définit quelques types comme int (nombres), float (nombres à virgule flottante), char (caractères). Les variables de ces types stockent directement la valeur de la variable. Ce ne sont pas des objets. On les appelle variables primitives.
+
+Un exemple est montré ci-dessous : Les variables primitives contiennent des bits représentant la valeur de la variable.
+
+```java
+
+int valeur = 5;
+```
+
+Différents types primitifs en Java sont char, boolean, byte, short, int, long, double ou float. En raison de ces types primitifs, 
+
+**Types de Données Numériques**
+
+Types : byte, short, int, long, float, double
+Nombre de bits : 8, 16, 32, 64, 32, 64
+Plage : -x à x-1 où x = 2^(nombre de bits -1)
+Type de Données char
+
+Utilisé pour stocker des caractères. La taille du caractère est de 16 bits.
+Exemples
+
+```java
+
+int i = 15;
+long longValue = 1000000000000l;
+byte b = (byte)254;
+
+float f = 26.012f;
+double d = 123.567;
+boolean estFait = true;
+boolean estBon = false;
+char ch = 'a';
+char ch2 = ';';
+```
+**Variables de Référence**
+
+```java
+
+Animal chien = new Animal();
+```
+
+L'instance du nouvel Animal - objet Animal - est créée en mémoire. L'adresse mémoire de l'objet créé est stockée dans la variable de référence chien.
+
+Les variables de référence contiennent une référence ou un guide pour accéder à l'objet réel en mémoire.
 
 ## Chapitre 2: Variables et Types de Données
 
