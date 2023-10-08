@@ -101,8 +101,9 @@ try {
 } catch (FileNotFoundException e) {
     System.out.println("Le fichier n'existe pas.");
 }
-Utilisez le code avec précaution. En savoir plus
-Explications
+```
+
+**Explications**
 
 L'instruction try/catch permet de gérer les exceptions.
 Le bloc try contient le code qui peut générer une exception.
