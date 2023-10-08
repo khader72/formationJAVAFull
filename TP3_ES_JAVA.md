@@ -23,7 +23,7 @@ Pour fermer le fichier, nous utilisons la méthode close() de la classe FileRead
 
 Exemple de code
 
-Java
+```Java
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -55,7 +55,7 @@ public class LireFichierTexte {
         lecteur.close();
     }
 }
-Utilisez le code avec précaution. En savoir plus
+```
 
 ### Exercice 2 : Écriture d'un fichier texte
 
@@ -73,7 +73,7 @@ Pour fermer le fichier, nous utilisons la méthode close() de la classe FileWrit
 
 Exemple de code
 
-Java
+```Java
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -95,6 +95,7 @@ public class EcrireFichierTexte {
         ecrivain.close();
     }
 }
+```
 
 ### Exercice 3 : Lecture d'un fichier binaire
 
@@ -119,8 +120,9 @@ Exemples de code
 
 Voici quelques exemples de code pour lire un fichier binaire :
 
-Lecture d'un entier
-Java
+**Lecture d'un entier**
+
+```Java
 import java.io.File;
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -145,9 +147,11 @@ public class LireFichierBinaire {
         System.out.println(entier);
     }
 }
-Utilisez le code avec précaution. En savoir plus
+```
+
 Lecture d'une chaîne de caractères
-Java
+
+```Java
 import java.io.File;
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -172,9 +176,11 @@ public class LireFichierBinaire {
         System.out.println(chaine);
     }
 }
-Utilisez le code avec précaution. En savoir plus
-Lecture d'un tableau d'entiers
-Java
+```
+
+**Lecture d'un tableau d'entiers**
+
+```Java
 import java.io.File;
 import java.io.DataInputStream;
 import java.io.IOException;
