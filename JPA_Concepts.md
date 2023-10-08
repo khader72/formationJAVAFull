@@ -221,8 +221,90 @@ Le choix de la stratégie de chargement appropriée dans JPA est important pour 
 
 ##  Annotation  @GeneratedValue
 
-L'annotation @GeneratedValue est utilisée pour spécifier comment l'identifiant d'une entité est généré. La stratégie GenerationType détermine la méthode utilisée pour générer la valeur de l'identifiant.
+@GeneratedValue est une annotation JPA qui permet de spécifier comment l'identifiant d'une entité est généré. La stratégie GenerationType détermine la méthode utilisée pour générer la valeur de l'identifiant.
 
 Les différentes stratégies disponibles sont les suivantes :
 
-GenerationType.AUTO : la valeur de l'identifiant est générée automatiquement par la base de données. Cette stratégie est la
+**GenerationType.AUTO :** la valeur de l'identifiant est générée automatiquement par la base de données. Cette stratégie est la plus courante, car elle est simple à utiliser et efficace.
+
+**GenerationType.IDENTITY :**
+
+la valeur de l'identifiant est générée automatiquement par la base de données, à l'aide d'une colonne auto-incrémentée. Cette stratégie est similaire à la stratégie GenerationType.AUTO, mais elle permet de personnaliser le nom de la colonne auto-incrémentée.
+
+**GenerationType.SEQUENCE :**
+
+la valeur de l'identifiant est générée par une séquence de la base de données. Cette stratégie permet de garantir l'unicité de la valeur de l'identifiant, même si la base de données n'utilise pas de colonnes auto-incrémentées.
+
+**GenerationType.TABLE :**
+
+la valeur de l'identifiant est générée par une table de la base de données. Cette stratégie est similaire à la stratégie 
+
+**GenerationType.SEQUENCE:**
+
+, mais elle permet de personnaliser la table utilisée pour générer les valeurs de l'identifiant.
+Exemples
+
+Relation one-to-many
+
+Supposons que nous avons une classe Article qui a une relation one-to-many avec une classe Commentaire. La stratégie GenerationType.AUTO peut être utilisée comme suit :
+
+```Java
+@Entity
+public class Article {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    private String titre;
+
+    @OneToMany(mappedBy = "article")
+    private List<Commentaire> commentaires;
+}
+```
+
+```Java
+// Récupération d'un article
+Article article = em.find(Article.class, 1L);
+
+// Affichage de l'identifiant
+System.out.println(article.getId());
+```
+
+
+**Relation many-to-one**
+
+Supposons que nous avons une classe Client qui a une relation many-to-one avec une classe Commande. La stratégie GenerationType.IDENTITY peut être utilisée comme suit :
+
+```Java
+@Entity
+public class Client {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String nom;
+
+    @OneToMany(mappedBy = "client")
+    private List<Commande> commandes;
+}
+```
+
+
+```Java
+// Récupération d'un client
+Client client = em.find(Client.class, 1L);
+
+// Affichage de l'identifiant
+System.out.println(client.getId());
+```
+
+**Conclusion**
+
+La stratégie @GeneratedValue permet de personnaliser la façon dont l'identifiant d'une entité est généré. Il est important de choisir la stratégie appropriée en fonction des besoins de votre application.
+
+**Sources**:
+
+- github.com/camara94/challangejournalier27092020
+- github.com/Moustapha918/Sygep2.0
