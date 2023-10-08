@@ -8,7 +8,6 @@ Découvrir la définition des tests unitaires.
 
 1. Lire la définition des tests unitaires
 
-### Markdown
 
 Les tests unitaires sont des tests logiciels qui vérifient le bon fonctionnement d'une unité de code, généralement une méthode ou une classe. Ils sont essentiels pour garantir la qualité du code et éviter les bugs.
 
@@ -18,7 +17,6 @@ Les tests unitaires doivent être :
 * **Réutilisables** : les tests doivent pouvoir être exécutés à tout moment, sans avoir à modifier le code source.
 * **Autonomiser** : les tests doivent pouvoir être exécutés sans avoir à démarrer l'application complète.
 
-Utilisez le code avec précaution. [En savoir plus](lien_vers_plus_d'informations)
 
 2. Identifier les avantages des tests unitaires
 
@@ -52,11 +50,10 @@ Apprendre à écrire des tests unitaires.
 
 1. Identifier les unités de code à tester
 
-### Markdown
 
 Dans cet exemple, nous allons tester la méthode `somme()` qui calcule la somme de deux nombres.
 
-Utilisez le code avec précaution. [En savoir plus](lien_vers_plus_d'informations)
+
 
 2. Définir les cas de test
 
