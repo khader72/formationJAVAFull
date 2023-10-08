@@ -670,70 +670,99 @@ System.out.println(ensemble.size());  // Sortie : 2
 
 Cas d'Usage : Stockage de paires clé-valeur.
 Exemple de Code :
+```
 java
 
 Map<String, Integer> map = new HashMap<>();
 map.put("Clé 1", 1);
 map.put("Clé 2", 2);
 System.out.println(map.get("Clé 1"));  // Sortie : 1
-4. File d'Attente (Queue) :
+```
+
+**4. File d'Attente (Queue) :**
+
 Cas d'Usage : Stockage d'une collection d'éléments où l'élément le plus ancien est toujours le premier à être retiré.
 Exemple de Code :
-java
+
+```java
 
 Queue<String> fileAttente = new LinkedList<>();
 fileAttente.add("Élément 1");
 fileAttente.add("Élément 2");
 System.out.println(fileAttente.poll());  // Sortie : "Élément 1"
-5. Liste Liée (Linked List) :
+```
+
+**5. Liste Liée (Linked List) :**
+
 Cas d'Usage : Stockage d'une liste doublement chaînée de nœuds.
 Exemple de Code :
-java
+
+```java
 
 LinkedList<String> listeLiee = new LinkedList<>();
 listeLiee.add("Élément 1");
 listeLiee.add("Élément 2");
 System.out.println(listeLiee.getFirst());  // Sortie : "Élément 1"
-6. File (Deque) :
+```
+
+**6. File (Deque) :**
+
 Cas d'Usage : Stockage d'une double file où les éléments peuvent être ajoutés ou retirés des deux extrémités.
 Exemple de Code :
-java
+
+```java
 
 Deque<String> deque = new ArrayDeque<>();
 deque.addFirst("Premier");
 deque.addLast("Dernier");
 System.out.println(deque.getFirst());  // Sortie : "Premier"
-7. Table de Hachage (Hashtable) :
+```
+
+**7. Table de Hachage (Hashtable) :**
+
 Cas d'Usage : Stockage d'une collection de paires clé-valeur synchronisées.
 Exemple de Code :
-java
+
+```java
 
 Hashtable<String, Integer> tableHachage = new Hashtable<>();
 tableHachage.put("Clé 1", 1);
 tableHachage.put("Clé 2", 2);
 System.out.println(tableHachage.get("Clé 1"));  // Sortie : 1
-8. Liste Triée (Sorted List) :
+```
+
+**8. Liste Triée (Sorted List) :**
+
 Cas d'Usage : Stockage d'une liste triée d'éléments.
 Exemple de Code :
-java
+
+```java
 
 SortedSet<String> listeTriee = new TreeSet<>();
 listeTriee.add("Élément 2");
 listeTriee.add("Élément 1");
 System.out.println(listeTriee.first());  // Sortie : "Élément 1"
-9. Liste Triée par Comparator :
+```
+
+**9. Liste Triée par Comparator :**
+
 Cas d'Usage : Stockage d'une liste triée d'éléments basée sur un comparateur personnalisé.
 Exemple de Code :
-java
+
+```java
 
 SortedSet<String> listeTrieeCustom = new TreeSet<>(Comparator.reverseOrder());
 listeTrieeCustom.add("Élément 2");
 listeTrieeCustom.add("Élément 1");
 System.out.println(listeTrieeCustom.first());  // Sortie : "Élément 2"
-10. Liste Triée par Objet Comparator :
+```
+
+**10. Liste Triée par Objet Comparator :**
+
 Cas d'Usage : Stockage d'une liste triée d'objets basée sur un comparateur externe.
 Exemple de Code :
-java
+
+```java
 
 class Personne {
     String nom;
@@ -749,17 +778,21 @@ class ComparateurAge implements Comparator<Personne> {
 
 // Dans votre méthode principale :
 SortedSet<Personne> personnesTriees = new TreeSet<>(new ComparateurAge());
+```
+
 Commentaires :
+
 Les collections Java offrent une grande variété de structures de données, chacune ayant son utilité dans des cas spécifiques.
 Il est important de choisir la collection appropriée en fonction des besoins spécifiques de votre application, en tenant compte des performances et de la complexité algorithmique.
 
 
-24. Les Streams en Java 8:
+## 24. Les Streams en Java 8:
+
 Définition : Les streams en Java 8 offrent une nouvelle abstraction pour traiter les données de manière fonctionnelle. Ils permettent de traiter des collections de données de manière déclarative et parallèle, facilitant ainsi le traitement des données massives.
 
 Exemple de Code :
 
-java
+```java
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -773,28 +806,28 @@ public class Main {
         System.out.println("Résultats : " + resultats);
     }
 }
+```
+
 Commentaire :
 
 Les streams offrent une manière élégante et fonctionnelle de traiter les données en Java 8 et versions ultérieures.
 
-25. JavaFX:
+## 25. JavaFX:
+
 Définition : JavaFX est un framework pour le développement d'applications graphiques et multimédias en Java. Il offre des composants graphiques riches et des fonctionnalités avancées pour créer des interfaces utilisateur modernes.
 
-Exemple de Code :
-
-JavaFX implique la création d'interfaces utilisateur graphiques, donc les exemples de code peuvent être très spécifiques à l'application.
 
 Commentaire :
 
 JavaFX est largement utilisé pour le développement d'applications de bureau, offrant des fonctionnalités avancées pour les interfaces utilisateur interactives.
 
-25bis. Swing (Java GUI Toolkit):
+## 25bis. Swing (Java GUI Toolkit):
 
 Définition : Swing est une bibliothèque graphique pour Java. Elle permet de créer des interfaces utilisateur graphiques (GUI) pour les applications Java. Swing offre une grande variété de composants, de fenêtres, de boîtes de dialogue et d'autres éléments pour créer des applications interactives.
 
 Exemple de Code (Swing) :
 
-java
+```java
 
 import javax.swing.*;
 
@@ -817,11 +850,14 @@ public class MaFenetre {
         fenetre.setVisible(true);
     }
 }
+```
+
 Commentaire :
 
 Swing est une bibliothèque classique pour créer des interfaces utilisateur en Java. Bien que JavaFX soit plus moderne et recommandé pour de nouveaux projets, Swing reste utilisé dans certaines applications existantes.
 
-26. Java EE (Enterprise Edition):
+## 26. Java EE (Enterprise Edition):
+
 Définition : Java EE est une extension de Java SE (Standard Edition) destinée au développement d'applications d'entreprise. Il offre des spécifications et des API pour les applications Web, les services web, la gestion de données, etc.
 
 Exemple de Code :
