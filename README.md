@@ -71,8 +71,8 @@ En utilisant un serveur local, vous évitez les problèmes de CORS pendant le d�
 
 ```bash
 
-http-server -p 3000
+http-server -p 9090  --cors
 ```
 
-Dans cet exemple, le serveur local sera démarré sur le port 3000. Vous pouvez remplacer 3000 par n'importe quel numéro de port de votre choix. Assurez-vous simplement de ne pas utiliser un port qui est déjà utilisé par un autre service sur votre système.
+Dans cet exemple, le serveur local sera démarré sur le port 9090. Vous pouvez remplacer 9090 par n'importe quel numéro de port de votre choix. Assurez-vous simplement de ne pas utiliser un port qui est déjà utilisé par un autre service sur votre système.
 
