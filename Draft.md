@@ -4,13 +4,13 @@
 
 **Définitions**
 
-```
+
 Java : Java est un langage de programmation de haut niveau, robuste, orienté objet et sécurisé. Il a été développé par Sun Microsystems (maintenant acquis par Oracle).
 
 **Java** est un langage de programmation de haut niveau, orienté objet et largement utilisé dans le développement logiciel.
 
  Il a été créé par **James Gosling**, **Mike Sheridan**, et **Patrick Naughton** chez **Sun Microsystems** en 1991. Java est conçu pour être portable, performant et sûr, ce qui signifie qu'il peut fonctionner sur divers systèmes d'exploitation sans nécessiter de modifications majeures.
-```
+
 ### Historique et Versions de Java :
 
 - **1995 :** Java 1.0 (JDK 1.0) - Première version publique de Java.
