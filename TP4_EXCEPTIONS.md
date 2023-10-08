@@ -53,7 +53,7 @@ La division par zéro est illégale en Java. Si une division par zéro est tent�
 L'index d'un tableau ne doit pas être supérieur à la longueur du tableau. Si un index hors limites est utilisé, une ArrayIndexOutOfBoundsException est générée.
 Une variable null ne peut pas être utilisée pour accéder à une propriété.
 
-Exercice 2 : Gestion des exceptions
+### Exercice 2 : Gestion des exceptions
 
 ```Java
 // Gestion d'une `ArithmeticException`
