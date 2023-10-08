@@ -1,19 +1,22 @@
 
 # TP sur la gestion des exceptions en Java
 
-### Objectifs
+## Objectifs
 
 Comprendre les concepts de base de la gestion des exceptions en Java
 Savoir identifier les situations susceptibles de générer des exceptions
 Savoir gérer les exceptions de manière appropriée
-Exercice 1 : Identification des exceptions
 
-Java
+### Exercice 1 : Identification des exceptions
+
+```Java
 // Génération d'une `ArithmeticException`
 int a = 10;
 int b = 0;
 
 int c = a / b;
+```
+
 
 // Génération d'une `ArrayIndexOutOfBoundsException`
 int[] tableau = new int[10];
@@ -34,22 +37,27 @@ int entier = Integer.parseInt(nombre);
 File fichier = new File("fichier.txt");
 
 FileReader lecteur = new FileReader(fichier);
-Utilisez le code avec précaution. En savoir plus
-Explications
+```
 
+**Explications**
+
+```
 L'instruction int c = a / b; génère une ArithmeticException car la division par zéro est illégale.
 L'instruction System.out.println(tableau[11]); génère une ArrayIndexOutOfBoundsException car l'index 11 est hors des limites du tableau.
 L'instruction System.out.println(chaine.length()); génère une NullPointerException car la variable chaine est nulle.
 L'instruction int entier = Integer.parseInt(nombre); génère une NumberFormatException car la chaîne nombre ne représente pas un nombre entier valide.
 L'instruction FileReader lecteur = new FileReader(fichier); génère une FileNotFoundException car le fichier fichier.txt n'existe pas.
-Justifications
+```
+
+**Justifications**
 
 La division par zéro est illégale en Java. Si une division par zéro est tentée, une ArithmeticException est générée.
 L'index d'un tableau ne doit pas être supérieur à la longueur du tableau. Si un index hors limites est utilisé, une ArrayIndexOutOfBoundsException est générée.
 Une variable null ne peut pas être utilisée pour accéder à une propriété.
+
 Exercice 2 : Gestion des exceptions
 
-Java
+```Java
 // Gestion d'une `ArithmeticException`
 int a = 10;
 int b = 0;
