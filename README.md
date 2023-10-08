@@ -21,6 +21,13 @@ Formation  JAVA  Full
 - ECLIPSE IDE
 - VS CODE
 
+
+## IDE JAVA en Ligne /Web
+
+
+## JAVA Web  Spring Boot
+
+
 ## Visualer les Ficheir  MD  Markdown
 
 **Utilisez un Serveur Local :**
@@ -57,10 +64,15 @@ Assurez-vous de remplacer 'your-markdown-file.md' par le chemin relatif du fichi
 
 En utilisant un serveur local, vous évitez les problèmes de CORS pendant le développement local. Une fois votre application déployée sur un vrai serveur, ces problèmes ne se poseront pas.
 
-  
-## IDE JAVA en Ligne /Web
+ ** Pour changer le port sur lequel le serveur local fonctionne avec http-server**, 
+ 
+ vous pouvez spécifier le port lors du démarrage du serveur en utilisant l'option -p ou --port. Voici comment vous pouvez faire cela :
 
 
-## JAVA Web  Spring Boot
+```bash
 
+http-server -p 3000
+```
+
+Dans cet exemple, le serveur local sera démarré sur le port 3000. Vous pouvez remplacer 3000 par n'importe quel numéro de port de votre choix. Assurez-vous simplement de ne pas utiliser un port qui est déjà utilisé par un autre service sur votre système.
 
