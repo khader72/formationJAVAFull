@@ -1243,29 +1243,34 @@ Commentaire :
 
 Les microservices permettent une évolutivité et un déploiement indépendant, facilitant la gestion des applications complexes.
 
-38. Docker:
+## 38. Docker:
+
 Définition : Docker est une plateforme de conteneurisation permettant d'emballer des applications et leurs dépendances dans des conteneurs légers et portables. Ces conteneurs peuvent être exécutés sur n'importe quel système compatible Docker, garantissant la portabilité des applications.
 
 Exemple de Code :
 
 Exemple de fichier Dockerfile pour une application Java Spring Boot :
 
+```
 Dockerfile
 
 FROM openjdk:11-jre-slim
 WORKDIR /app
 COPY target/mon-application.jar mon-application.jar
 ENTRYPOINT ["java", "-jar", "mon-application.jar"]
+```
+
 Commentaire :
 
 Docker simplifie le déploiement des applications en garantissant leur exécution cohérente sur divers environnements.
 
-39. Kubernetes:
+## 39. Kubernetes:
+
 Définition : Kubernetes est une plateforme open-source de gestion d'orchestration de conteneurs. Il automatise le déploiement, la mise à l'échelle et la gestion des applications conteneurisées, offrant ainsi un environnement hautement disponible et extensible.
 
 Exemple de Configuration YAML :
 
-yaml
+```yaml
 
 apiVersion: v1
 kind: Pod
@@ -1277,16 +1282,20 @@ spec:
     image: mon-image:latest
     ports:
     - containerPort: 8080
+
+```
+
 Commentaire :
 
 Kubernetes facilite l'exploitation des applications conteneurisées à grande échelle dans des environnements de production.
 
-40. Apache Kafka:
+## 40. Apache Kafka:
+
 Définition : Apache Kafka est une plateforme de diffusion de données en temps réel. Il est utilisé pour la diffusion, la collecte et le stockage de flux de données en temps réel provenant de diverses sources, permettant ainsi le traitement en continu et la prise de décision basée sur des données en temps réel.
 
-Exemple de Code (Producteur Kafka) :
+**Exemple de Code (Producteur Kafka) :**
 
-java
+```java
 
 import org.apache.kafka.clients.producer.*;
 import java.util.Properties;
@@ -1309,9 +1318,11 @@ public class ProducteurKafka {
         producteur.close();
     }
 }
-Exemple de Code (Consommateur Kafka) :
+```
 
-java
+**Exemple de Code (Consommateur Kafka) :**
+
+```java
 
 import org.apache.kafka.clients.consumer.*;
 import java.util.Collections;
@@ -1340,6 +1351,8 @@ public class ConsommateurKafka {
         }
     }
 }
+```
+
 Commentaire :
 
 Apache Kafka est utilisé dans les architectures de microservices et les pipelines de traitement de données en temps réel.
