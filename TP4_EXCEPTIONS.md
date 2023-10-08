@@ -15,8 +15,6 @@ int a = 10;
 int b = 0;
 
 int c = a / b;
-```
-
 
 // Génération d'une `ArrayIndexOutOfBoundsException`
 int[] tableau = new int[10];
