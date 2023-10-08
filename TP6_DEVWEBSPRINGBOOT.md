@@ -68,6 +68,45 @@ Démarrez le serveur Tomcat en exécutant startup.sh (Linux) ou startup.bat (Win
 
 Spring Boot est un projet de Spring qui simplifie le développement d'applications Java en fournissant des configurations par défaut pour démarrer rapidement et facilement un projet.
 
+
+##  Structure Maven Spring Boot
+
+```lua
+
+quizz-app/
+|-- src/
+|   |-- main/
+|       |-- java/
+|           |-- com/
+|               |-- macrosoft/
+|                   |-- quizz/
+|                       |-- controller/
+|                           |-- AdminController.java
+|                           |-- QuizController.java
+|                       |-- model/
+|                           |-- Question.java
+|                       |-- repository/
+|                           |-- QuestionRepository.java
+|                       |-- service/
+|                           |-- QuestionService.java
+|                       |-- QuizzApplication.java
+|-- src/
+|   |-- main/
+|       |-- resources/
+|           |-- static/
+|               |-- css/
+|                   |-- styles.css
+|               |-- js/
+|                   |-- script.js
+|           |-- templates/
+|               |-- admin.html
+|               |-- quiz.html
+|-- pom.xml
+
+
+```
+
+
 ### Comparaison entre Spring Boot et Tomcat
 
 Spring Boot vs Tomcat
