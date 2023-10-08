@@ -210,7 +210,7 @@ public class LireFichierBinaire {
         }
     }
 }
-
+```
 
 **Conclusion**
 
