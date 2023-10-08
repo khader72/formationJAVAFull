@@ -868,25 +868,28 @@ Commentaire :
 
 Java EE offre un ensemble complet de technologies pour le développement d'applications d'entreprise robustes et évolutives.
 
-27. Spring Framework:
+## 27. Spring Framework:
+
 Définition : Spring est un framework open-source pour le développement d'applications Java. Il simplifie le développement en offrant une infrastructure complète pour le développement d'applications d'entreprise Java.
 
 Exemple de Code :
 
-Les exemples de code Spring dépendent du module Spring utilisé, tels que Spring MVC pour les applications web ou Spring Boot pour les applications autonomes.
+Les exemples de code Spring dépendent du module Spring utilisé, tels que **Spring MVC** pour les applications web ou **Spring Boot** pour les applications autonomes.
 
 Commentaire :
 
 Spring est largement utilisé dans l'industrie pour développer des applications robustes et modulaires en Java.
 
 
-28. Hibernate et JPA (Java Persistence API) :
+## 28. Hibernate et JPA (Java Persistence API) :
+
 Définition : Hibernate est un framework de persistance open-source qui simplifie la gestion des données dans les applications Java en offrant un mapping objet-relationnel (ORM). JPA, quant à lui, est une spécification standard Java pour la gestion des données dans les applications Java EE et Java SE, fournissant une interface de programmation pour l'ORM.
 
 Exemple de Code (Hibernate avec JPA) :
 
 Définir une Entité :
-java
+
+```java
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -903,8 +906,11 @@ public class Utilisateur {
 
     // Getters et setters
 }
+```
+
 Configurer la Session Factory de Hibernate :
-java
+
+```java
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -931,8 +937,11 @@ public class HibernateUtil {
         getSessionFactory().close();
     }
 }
+```
+
 Utiliser Hibernate dans une Classe :
-java
+
+```java
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -962,6 +971,8 @@ public class UtilisateurDAO {
         return utilisateur;
     }
 }
+```
+
 Commentaire :
 
 Dans cet exemple, nous avons défini une entité Utilisateur annotée avec JPA pour spécifier qu'elle doit être persistée dans la base de données. La classe HibernateUtil configure la SessionFactory de Hibernate à partir d'un fichier de configuration. La classe UtilisateurDAO utilise Hibernate pour ajouter un utilisateur à la base de données et récupérer un utilisateur par son ID.
@@ -970,7 +981,8 @@ Hibernate simplifie l'interaction avec les bases de données en permettant aux d
 
 
 
-29. JavaServer Faces (JSF):
+## 29. JavaServer Faces (JSF):
+
 Définition : JavaServer Faces (JSF) est un framework de développement d'interfaces utilisateur pour les applications Web Java. Il offre des composants réutilisables et un modèle de programmation basé sur les composants pour simplifier la création d'interfaces utilisateur dynamiques.
 
 Exemple de Code :
@@ -981,12 +993,13 @@ Commentaire :
 
 JSF facilite le développement d'interfaces utilisateur web interactives et dynamiques en utilisant des composants réutilisables.
 
-30. JUnit:
+## 30. JUnit:
+
 Définition : JUnit est un framework de test unitaire pour les applications Java. Il permet aux développeurs de définir et d'exécuter des tests unitaires pour vérifier le bon fonctionnement des parties individuelles d'un programme Java.
 
 Exemple de Code :
 
-java
+```java
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -998,15 +1011,19 @@ public class MaClasseTest {
         assertEquals(5, obj.maMethode(2, 3));
     }
 }
+```
+
 Commentaire :
 
 JUnit simplifie le processus de test des composants individuels d'une application Java, assurant ainsi la qualité du code.
 
-31. Maven:
+## 31. Maven:
+
 Définition : Apache Maven est un outil de gestion de projet et d'automatisation de construction largement utilisé pour les projets Java. Il simplifie le processus de gestion des dépendances, de compilation, de tests et de déploiement.
 
 Top 10 des Commandes Maven :
 
+```
 mvn clean: Nettoie le répertoire de sortie.
 mvn compile: Compile le code source du projet.
 mvn test: Exécute les tests unitaires.
@@ -1017,15 +1034,19 @@ mvn dependency:tree: Affiche l'arbre des dépendances.
 mvn spring-boot:run: Exécute une application Spring Boot.
 mvn site: Génère un site Web basé sur les rapports du projet.
 mvn clean install -DskipTests=true: Compile et installe sans exécuter les tests.
+```
+
 Commentaire :
 
 Maven automatise de nombreuses tâches liées au cycle de vie d'un projet Java, améliorant ainsi l'efficacité du développement.
 
-32. Gradle:
+## 32. Gradle:
+
 Définition : Gradle est un système de gestion de projet et d'automatisation de construction open-source. Il offre une syntaxe de configuration basée sur Groovy ou Kotlin pour définir des tâches de construction et des dépendances.
 
 Top 10 des Commandes Gradle :
 
+```
 gradle clean: Nettoie le répertoire de sortie.
 gradle build: Compile et emballe le projet.
 gradle test: Exécute les tests unitaires.
@@ -1036,6 +1057,8 @@ gradle wrapper: Génère les scripts Gradle Wrapper pour le projet.
 gradle bootRun: Exécute une application Spring Boot.
 gradle publish: Publie le package dans le référentiel distant.
 gradle clean build -x test: Compile et emballe en sautant l'exécution des tests.
+```
+
 Commentaire :
 
 Gradle offre une flexibilité et une puissance accrues dans la définition des tâches de construction par rapport à Maven.
@@ -1049,7 +1072,7 @@ Les sockets TCP sont utilisés pour établir des connexions réseau fiables et b
 
 Exemple de Code - Serveur TCP :
 
-java
+```java
 
 import java.io.*;
 import java.net.*;
@@ -1074,10 +1097,11 @@ public class ServeurTCP {
         clientSocket.close();
         serverSocket.close();
     }
-}
+}```
+
 Exemple de Code - Client TCP :
 
-java
+```java
 
 import java.io.*;
 import java.net.*;
@@ -1107,12 +1131,14 @@ public class ClientTCP {
         socket.close();
     }
 }
+```
+
 Utilisation de l'URL :
 La classe URL de Java permet d'accéder aux ressources via leur adresse URL.
 
 Exemple de Code - Accès à une URL :
 
-java
+```java
 
 import java.io.*;
 import java.net.*;
@@ -1130,11 +1156,14 @@ public class AccesURL {
         in.close();
     }
 }
+```
+
 Commentaire :
 
 Les sockets TCP sont utilisés pour établir des connexions réseau directes entre les machines, tandis que l'accès à l'URL permet d'interagir avec des ressources en ligne via des protocoles HTTP, HTTPS, FTP, etc. Les applications réseau Java sont essentielles pour les communications à distance, le partage de données et l'accès aux ressources en ligne.
 
-33bis. RESTful Web Services:
+## 33bis. RESTful Web Services:
+
 Définition : Les services web RESTful sont des services web basés sur les principes de l'architecture REST (Representational State Transfer). Ils utilisent des méthodes HTTP (GET, POST, PUT, DELETE) pour effectuer des opérations sur des ressources, généralement en format JSON ou XML.
 
 Exemple de Code :
@@ -1145,7 +1174,8 @@ Commentaire :
 
 Les services web RESTful permettent aux applications de communiquer de manière légère, scalable et étatless sur le Web.
 
-34. WebSockets:
+## 34. WebSockets:
+
 Définition : Les WebSockets sont un protocole de communication bidirectionnel en temps réel entre un client et un serveur sur le Web. Ils permettent une communication instantanée et bidirectionnelle entre les navigateurs web et les serveurs.
 
 Exemple de Code :
@@ -1157,12 +1187,13 @@ Commentaire :
 Les WebSockets sont utilisés dans les applications nécessitant des mises à jour en temps réel, comme les applications de chat et les tableaux de bord en direct.
 
 
-35. Spring Boot:
+## 35. Spring Boot:
+
 Définition : Spring Boot est un projet de la famille Spring Framework qui simplifie le processus de création d'applications Java autonomes et de production prêtes à l'emploi. Il offre des conventions intelligentes par défaut et des configurations automatiques.
 
 Exemple de Code :
 
-java
+```java
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -1173,16 +1204,19 @@ public class MonApplication {
         SpringApplication.run(MonApplication.class, args);
     }
 }
+```
+
 Commentaire :
 
 Spring Boot offre un démarrage rapide pour les projets Spring, en automatisant de nombreuses tâches de configuration.
 
-36. Spring Security:
+## 36. Spring Security:
+
 Définition : Spring Security est un module de sécurité puissant et personnalisable pour les applications Spring. Il offre une authentification, une autorisation et une protection contre les attaques courantes, aidant ainsi à sécuriser les applications web Java.
 
 Exemple de Code :
 
-java
+```java
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -1206,18 +1240,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll();
     }
 }
+```
+
 Commentaire :
 
 Spring Security est essentiel pour garantir la sécurité des applications web Java en protégeant contre diverses menaces.
 
-37. Microservices:
+## 37. Microservices:
+
 Définition : Les microservices sont une architecture logicielle où une application est divisée en petits services indépendants, chacun exécutant une tâche spécifique. Ces services sont souvent déployés indépendamment et communiquent entre eux via des API REST ou d'autres protocoles.
 
 Exemple de Code (avec Spring Boot) :
 
 Service 1 - Service de Commandes
 
-java
+```java
 
 @RestController
 public class CommandeController {
@@ -1227,9 +1264,11 @@ public class CommandeController {
         // Retourne la commande au format JSON
     }
 }
+```
+
 Service 2 - Service de Paiement
 
-java
+```java
 
 @RestController
 public class PaiementController {
@@ -1239,6 +1278,8 @@ public class PaiementController {
         // Retourne un message de confirmation
     }
 }
+```
+
 Commentaire :
 
 Les microservices permettent une évolutivité et un déploiement indépendant, facilitant la gestion des applications complexes.
