@@ -171,6 +171,116 @@ Java continue d'être l'un des langages de programmation les plus populaires et 
    - Applications mobiles (Android) 
    - Microservices (Spring Boot)
 
+#### Concepts de base de Java
+
+Java est un langage de programmation orienté objet développé par Sun Microsystems. Il est utilisé pour développer des applications pour une large gamme de plates-formes, y compris Windows, macOS, Linux et Android.
+
+Catégories de concepts
+
+Les concepts de Java peuvent être divisés en plusieurs catégories :
+
+**Syntaxe :** les règles qui déterminent la structure du code Java.
+
+**Mots-clés :**  les mots réservés utilisés dans le code Java.
+
+**Types de données :** les types de données pris en charge par Java.
+
+**Structures de données :** les structures de données utilisées pour stocker et organiser les données.
+
+**Opérations :** les opérations utilisées pour manipuler les données.
+
+**Instructions :** les instructions utilisées pour contrôler le flux d'exécution du code.
+
+**Classes :** les unités de base de l'organisation du code Java.
+
+**Objets :** les instances de classes.
+
+**Interfaces :** les déclarations d'une méthode ou d'un ensemble de méthodes.
+
+**Packages :** les regroupements de classes et d'interfaces.
+
+Explications
+
+**Syntaxe**
+
+La syntaxe de Java est basée sur la syntaxe du C et du C++. Les lignes de code Java commencent par un symbole de point-virgule (;) et se terminent par un retour chariot.
+
+**Mots-clés**
+
+Les mots-clés sont des mots réservés qui ont une signification particulière dans Java. Par exemple, le mot-clé public est utilisé pour déclarer une classe ou une méthode accessible à partir de n'importe où dans le programme.
+
+**Types de données**
+
+Java prend en charge les types de données suivants :
+
+Types primitifs : les types de données de base, tels que int, float et boolean.
+Types composés : les types de données complexes, tels que String et Array.
+
+**Structures de données**
+
+Java prend en charge les structures de données suivantes :
+
+Tableaux : les structures de données qui stockent une collection d'éléments de même type.
+Listes : les structures de données qui stockent une collection d'éléments de même type, dans un ordre ordonné.
+Dictionnaires : les structures de données qui stockent une collection d'éléments, associée à une clé unique.
+
+**Opérations**
+
+Les opérations de Java sont utilisées pour manipuler les données. Les opérations les plus courantes sont les opérations arithmétiques, les opérations logiques et les opérations de comparaison.
+
+**Instructions**
+
+Les instructions de Java sont utilisées pour contrôler le flux d'exécution du code. Les instructions les plus courantes sont les instructions d'affectation, les instructions de condition et les instructions de boucle.
+
+**Classes**
+
+Les classes sont les unités de base de l'organisation du code Java. Une classe définit un type d'objet et ses propriétés et méthodes.
+
+**Objets**
+
+Les objets sont les instances de classes. Ils sont créés à l'aide du mot-clé new.
+
+**Interfaces**
+
+Les interfaces sont les déclarations d'une méthode ou d'un ensemble de méthodes. Les classes peuvent implémenter des interfaces pour fournir une mise en œuvre de ces méthodes.
+
+**Packages**
+
+Les packages sont les regroupements de classes et d'interfaces. Ils sont utilisés pour organiser le code et éviter les conflits de noms.
+
+Exemples de code
+
+Voici quelques exemples de code Java pour illustrer les concepts ci-dessus :
+
+```Java
+// Déclaration d'une classe
+public class HelloWorld {
+
+    // Méthode principale
+    public static void main(String[] args) {
+        // Affichage d'un message
+        System.out.println("Hello, world!");
+    }
+}
+```
+
+Utilisez le code avec précaution. En savoir plus
+Ce code déclare une classe HelloWorld avec une méthode principale main(). La méthode main() affiche le message "Hello, world!" dans la console.
+```
+Java
+// Déclaration d'un tableau
+int[] numbers = {1, 2, 3, 4, 5};
+
+// Affichage du contenu du tableau
+for (int number : numbers) {
+    System.out.println(number);
+}
+```
+
+Utilisez le code avec précaution. En savoir plus
+Ce code déclare un tableau numbers contenant les nombres 1, 2, 3, 4 et 5
+
+
 ### Indépendance de la Plateforme
 - Écrire une fois, exécuter partout
 ![alt text](images/java-write-once-run-anywhere.png)
