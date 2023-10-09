@@ -1,4 +1,54 @@
 
+# Formation JAVA  WEB
+
+## Date et Lieu
+- **Date:** Du Mercredi 11 au Vendredi 13 Octobre 2023
+- **Lieu:** ORANGE
+```markdown
+A very <span style='color: red;'>long</span> sentence.
+```
+## Plan de Formation
+
+| Jour  | Contenu                                                                                    |
+|-------|--------------------------------------------------------------------------------------------|
+| Jour 1| - Introduction à Java<br> - Définition du langage Java<br> - Installation de l'environnement de développement Java<br> - Écriture d'un premier programme Java<br> - Opérateurs en Java<br>   - Opérateurs arithmétiques<br>   - Opérateurs logiques<br>   - Opérateurs de comparaison<br>   - Opérateurs de flux<br>   - Opérateurs de chaîne de caractères<br> - Les bases de la programmation orientée objet<br>   - Classes et objets<br>   - Héritage<br>   - Encapsulation<br>   - Interfaces<br>   - Exceptions<br> |
+| Jour 2| - Collections en Java<br>   - Listes : ArrayList, LinkedList, Vector<br>   - Ensembles (Set) : HashSet, LinkedHashSet, TreeSet<br>   - Maps : HashMap, LinkedHashMap, TreeMap<br> - Entrée/sortie (E/S) en Java<br>   - Lecture et écriture de fichiers texte<br>   - Lecture et écriture de fichiers binaires<br> - Tests unitaires en Java<br>   - Définition des tests unitaires<br>   - Écrire des tests unitaires<br>   - Exécuter des tests unitaires<br> |
+| Jour 3| - Développement d'une application Web simple<br>   - Création de contrôleurs<br>   - Utilisation de Thymeleaf pour les vues<br> - Gestion des données avec Spring Boot<br>   - Utilisation de Spring Data JPA<br>   - Intégration d'une base de données (par exemple, MySQL, H2)<br> - Exercices de consolidation<br>   - Jour 1 : Écrire un programme Java qui calcule le volume d'un cylindre<br>   - Jour 2 : Écrire un test unitaire pour un programme Java qui calcule le volume d'un cylindre<br>   - Jour 3 : Créer une application web Spring Boot simple qui affiche une liste de produits<br> |
+
+## Objectifs de la formation
+À l'issue de cette formation, les participants seront capables de :
+- Comprendre les bases du langage Java
+- Utiliser les concepts de la programmation orientée objet
+- Écrire des tests unitaires en Java
+- Créer des applications web Spring Boot
+
+## Prérequis
+Aucun prérequis n'est nécessaire pour suivre cette formation. Cependant, une connaissance de base de l'informatique est recommandée.
+
+## Méthodes pédagogiques
+La formation combinera des exposés théoriques et des exercices pratiques. Les participants auront l'occasion de mettre en pratique les concepts appris lors de la formation.
+
+## Matériel nécessaire
+- Un ordinateur portable avec Java installé
+- Un IDE Java (comme Eclipse ou IntelliJ IDEA)
+- Un compte GitHub
+
+## Modalités d'évaluation
+Les participants seront évalués sur la base de leurs participations aux exercices et à la réalisation du TP.
+
+## Formateur
+
+**SANOGO  Souleymane**
+- Architecte Logiciel avec 18 ans d'expérience*
+- Mentor Formateur JAVA JEE OpenClassRooms
+- **Formateur Architecture Logiciel, JAVA, JEE, Android, Python, Web**
+- **Formateur Gestion de Projet Agile et Coach Agile**
+
+- **Site Web de APM :** [Site de APM](https://africa-project-management1.odoo.com/)
+- **Contact :** 00 225 02 41 51 67
+- **LinkedIn :** [www.linkedin.com/in/souleymanesanogo](http://www.linkedin.com/in/souleymanesanogo/)
+
+
 
 
 # Plan de formation Java Web sur 3 jours
@@ -381,7 +431,7 @@ Ce code déclare un tableau numbers contenant les nombres 1, 2, 3, 4 et 5
 
 ### Indépendance de la Plateforme
 - Écrire une fois, exécuter partout
-![JAVA Multiplatforme](https://github.com/sanogotech/formationJAVAFull/blob/main/images/java-write-once-run-anywhere.png)
+
 - Le bytecode Java est l'instruction de la machine virtuelle Java
 
 
