@@ -1,3 +1,101 @@
+
+
+
+# Plan de formation Java Web sur 3 jours
+
+## Jour 1
+
+### Introduction à Java
+
+* Définition du langage Java
+* Installation de l'environnement de développement Java
+* Écriture d'un premier programme Java
+
+### Opérateurs en Java
+
+* Opérateurs arithmétiques
+* Opérateurs logiques
+* Opérateurs de comparaison
+* Opérateurs de flux
+* Opérateurs de chaîne de caractères
+  
+### Les bases de la programmation orientée objet
+
+* Classes et objets
+* Héritage
+* Encapsulation
+* Interfaces
+* Exceptions
+
+
+## Jour 2
+
+### Collections en Java
+
+* Listes : ArrayList, LinkedList, Vector.
+* Ensembles (Set) : HashSet, LinkedHashSet, TreeSet.
+* Maps : HashMap, LinkedHashMap, TreeMap.
+
+
+### Entrée/sortie (E/S) en Java
+
+* Lecture et écriture de fichiers texte
+* Lecture et écriture de fichiers binaires
+
+### Tests unitaires en Java
+
+* Définition des tests unitaires
+* Écrire des tests unitaires
+* Exécuter des tests unitaires
+
+## Jour 3
+
+### Développement d'une application Web simple
+
+* Création de contrôleurs
+* Utilisation de Thymeleaf pour les vues
+
+### Gestion des données avec Spring Boot
+
+* Utilisation de Spring Data JPA
+* Intégration d'une base de données (par exemple, MySQL, H2)
+
+## Exercices de consolidation
+
+* Jour 1 : Écrire un programme Java qui calcule le volume d'un cylindre.
+* Jour 2 : Écrire un test unitaire pour un programme Java qui calcule le volume d'un cylindre.
+* Jour 3 : Créer une application web Spring Boot simple qui affiche une liste de produits.
+
+## Objectifs de la formation
+
+À l'issue de cette formation, les participants seront capables de :
+
+* Comprendre les bases du langage Java
+* Utiliser les concepts de la programmation orientée objet
+* Écrire des tests unitaires en Java
+* Créer des applications web Spring Boot
+
+## Prérequis
+
+Aucun prérequis n'est nécessaire pour suivre cette formation. Cependant, une connaissance de base de l'informatique est recommandée.
+
+## Méthodes pédagogiques
+
+La formation combinera des exposés théoriques et des exercices pratiques. Les participants auront l'occasion de mettre en pratique les concepts appris lors de la formation.
+
+## Matériel nécessaire
+
+* Un ordinateur portable avec Java 11 installé
+* Un IDE Java (comme Eclipse ou IntelliJ IDEA)
+* Un compte GitHub
+
+## Modalités d'évaluation
+
+Les participants seront évalués sur la base de leurs participations aux exercices et à la réalisation du TP.
+
+
+
+
 # Cours Complet sur JAVA JEE
 
 ## Chapitre 1: Introduction à Java
