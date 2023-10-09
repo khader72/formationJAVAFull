@@ -32,7 +32,7 @@
 * Listes : ArrayList, LinkedList, Vector.
 * Ensembles (Set) : HashSet, LinkedHashSet, TreeSet.
 * Maps : HashMap, LinkedHashMap, TreeMap.
-* Files d'Attente (Queue) et Piles (Stack) : Queue, PriorityQueue, Stack.
+
 
 ### Entrée/sortie (E/S) en Java
 
