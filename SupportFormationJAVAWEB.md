@@ -2,11 +2,10 @@
 # Formation JAVA  WEB
 
 ## Date et Lieu
+
 - **Date:** Du Mercredi 11 au Vendredi 13 Octobre 2023
 - **Lieu:** ORANGE
-```markdown
-A very <span style='color: red;'>long</span> sentence.
-```
+
 ## Plan de Formation
 
 | Jour  | Contenu                                                                                    |
@@ -15,7 +14,11 @@ A very <span style='color: red;'>long</span> sentence.
 | Jour 2| - Collections en Java<br>   - Listes : ArrayList, LinkedList, Vector<br>   - Ensembles (Set) : HashSet, LinkedHashSet, TreeSet<br>   - Maps : HashMap, LinkedHashMap, TreeMap<br> - Entrée/sortie (E/S) en Java<br>   - Lecture et écriture de fichiers texte<br>   - Lecture et écriture de fichiers binaires<br> - Tests unitaires en Java<br>   - Définition des tests unitaires<br>   - Écrire des tests unitaires<br>   - Exécuter des tests unitaires<br> |
 | Jour 3| - Développement d'une application Web simple<br>   - Création de contrôleurs<br>   - Utilisation de Thymeleaf pour les vues<br> - Gestion des données avec Spring Boot<br>   - Utilisation de Spring Data JPA<br>   - Intégration d'une base de données (par exemple, MySQL, H2)<br> - Exercices de consolidation<br>   - Jour 1 : Écrire un programme Java qui calcule le volume d'un cylindre<br>   - Jour 2 : Écrire un test unitaire pour un programme Java qui calcule le volume d'un cylindre<br>   - Jour 3 : Créer une application web Spring Boot simple qui affiche une liste de produits<br> |
 
+
+
+
 ## Objectifs de la formation
+
 À l'issue de cette formation, les participants seront capables de :
 - Comprendre les bases du langage Java
 - Utiliser les concepts de la programmation orientée objet
@@ -23,17 +26,21 @@ A very <span style='color: red;'>long</span> sentence.
 - Créer des applications web Spring Boot
 
 ## Prérequis
+
 Aucun prérequis n'est nécessaire pour suivre cette formation. Cependant, une connaissance de base de l'informatique est recommandée.
 
 ## Méthodes pédagogiques
+
 La formation combinera des exposés théoriques et des exercices pratiques. Les participants auront l'occasion de mettre en pratique les concepts appris lors de la formation.
 
 ## Matériel nécessaire
+
 - Un ordinateur portable avec Java installé
 - Un IDE Java (comme Eclipse ou IntelliJ IDEA)
 - Un compte GitHub
 
 ## Modalités d'évaluation
+
 Les participants seront évalués sur la base de leurs participations aux exercices et à la réalisation du TP.
 
 ## Formateur
