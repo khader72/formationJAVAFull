@@ -283,7 +283,7 @@ Ce code déclare un tableau numbers contenant les nombres 1, 2, 3, 4 et 5
 
 ### Indépendance de la Plateforme
 - Écrire une fois, exécuter partout
-![alt text](images/java-write-once-run-anywhere.png)
+![JAVA Multiplatforme](https://github.com/sanogotech/formationJAVAFull/blob/main/images/java-write-once-run-anywhere.png)
 - Le bytecode Java est l'instruction de la machine virtuelle Java
 
 
