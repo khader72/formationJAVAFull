@@ -1,4 +1,3 @@
-
 # Formation JAVA  WEB
 
 ## Date et Lieu
@@ -1764,7 +1763,7 @@ public class HelloWorldServlet extends HttpServlet {
 
 **Syntaxe** (JSP)
 
-```jsp
+```html
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
