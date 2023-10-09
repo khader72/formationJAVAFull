@@ -96,7 +96,7 @@ Les participants seront évalués sur la base de leurs participations aux exerci
 
 
 
-# Cours Complet sur JAVA JEE
+# Formation  Initiation  à  JAVA WEB par la Pratique
 
 ## Chapitre 1: Introduction à Java
 
