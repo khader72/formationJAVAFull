@@ -198,6 +198,7 @@ public class HelloWorld {
         System.out.println("Hello, world!");
     }
 }
+
 ```
 
 Exemples de Code
@@ -401,19 +402,20 @@ Exemples de code
 Voici quelques exemples de code Java pour illustrer les concepts ci-dessus :
 
 ```Java
-// Déclaration d'une classe
-public class HelloWorld {
-
-    // Méthode principale
-    public static void main(String[] args) {
-        // Affichage d'un message
-        System.out.println("Hello, world!");
-    }
-}
+  // Déclaration d'une classe
+  public class HelloWorld {
+  
+      // Méthode principale
+      public static void main(String[] args) {
+          // Affichage d'un message
+          System.out.println("Hello, world!");
+      }
+  }
 ```
 
 Utilisez le code avec précaution. En savoir plus
 Ce code déclare une classe HelloWorld avec une méthode principale main(). La méthode main() affiche le message "Hello, world!" dans la console.
+
 ```
 Java
 // Déclaration d'un tableau
@@ -480,7 +482,9 @@ public class BonjourLeMonde {
     public static void main(String[] args) {
         System.out.println("Bonjour le Monde");
     }
-}```
+}
+
+```
 
 Notes
 
