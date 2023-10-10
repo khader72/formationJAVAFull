@@ -50,7 +50,7 @@ Les participants seront évalués sur la base de leurs participations aux exerci
 - **Formateur Gestion de Projet Agile et Coach Agile**
 
 - **Site Web de APM :** [Site de APM](https://africa-project-management1.odoo.com/)
-- **Contact :** 00 225 02 41 51 67
+- **Contact :** 00 225 01 02 41 51 67
 - **LinkedIn :** [www.linkedin.com/in/souleymanesanogo](http://www.linkedin.com/in/souleymanesanogo/)
 
 
