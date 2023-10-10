@@ -721,6 +721,18 @@ Le chiffre "1" à côté de la flèche indique que chaque utilisateur peut avoir
 
 ```mermaid
 sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+```
+
+```mermaid
+sequenceDiagram
  
   U->S: Demander d'ajouter un produit au panier
   S->U: Afficher une liste de produits
@@ -730,6 +742,8 @@ sequenceDiagram
   S->U: Ajouter le produit au panier
   U->S: Afficher le contenu du panier
 ```
+
+
 Ce diagramme de séquence représente l'ordre des interactions entre un utilisateur et un système.
 
 1.  L'utilisateur demande d'ajouter un produit au panier.
@@ -741,6 +755,111 @@ Ce diagramme de séquence représente l'ordre des interactions entre un utilisat
 
 
 **UML est un outil puissant** qui peut être utilisé pour modéliser des systèmes logiciels en POO. Les diagrammes UML peuvent être utilisés pour représenter la structure et le comportement des systèmes logiciels, ce qui peut aider à améliorer la communication et la compréhension entre les développeurs.
+
+
+
+##### Top 5 des Concepts de POO  / UML
+
+1. **Héritage**
+
+L'héritage est un mécanisme qui permet à une classe d'hériter des propriétés et des comportements d'une autre classe. Cela permet de réutiliser le code et de faciliter le développement de logiciels.
+
+```mermaid
+classDiagram
+  class Animal {
+    - nom: String
+    - âge: int
+    - manger()
+  }
+  class Chat extends Animal {
+    - miauler()
+  }
+  class Chien extends Animal {
+    - aboyer()
+  }
+```
+
+Dans cet exemple, la classe Chat et la classe Chien héritent de la classe Animal. Cela signifie que les chats et les chiens ont les mêmes propriétés et comportements que les animaux en général, tels que un nom, un âge et la capacité de manger. En plus de ces propriétés et comportements, les chats ont la capacité de miauler et les chiens ont la capacité d'aboyer.
+
+2. **Encapsulation**
+
+L'encapsulation est un mécanisme qui permet de cacher les détails d'une classe aux autres classes. Cela permet de protéger les données et les comportements d'une classe des modifications non autorisées.
+
+```mermaid
+
+classDiagram
+  class CompteBancaire {
+    - solde: float
+    - retirer(montant: float)
+    - déposer(montant: float)
+  }
+  
+```
+Dans cet exemple, la classe CompteBancaire a une propriété solde qui est privée. Cela signifie que la propriété solde ne peut être accessible que par les méthodes de la classe CompteBancaire.
+
+3. **Abstraction**
+
+L'abstraction est un mécanisme qui permet de regrouper des propriétés et des comportements communs en une seule entité. Cela permet de simplifier la conception et le développement de logiciels.
+
+```mermaid
+
+classDiagram
+  abstract class Figure {
+    - aire(): float
+    - périmètre(): float
+  }
+  class Cercle extends Figure {
+    - rayon: float
+  }
+  class Carré extends Figure {
+    - côté: float
+  }
+  
+```
+
+Dans cet exemple, la classe Figure est une classe abstraite. Cela signifie que la classe Figure ne peut pas être instanciée. La classe Figure définit deux méthodes abstraites, aire() et périmètre(). Les classes Cercle et Carré héritent de la classe Figure et implémentent les méthodes aire() et périmètre().
+
+4. **Polymorphisme**
+
+Le polymorphisme est un mécanisme qui permet à des objets de différents types d'avoir le même comportement. Cela permet de rendre le code plus flexible et plus extensible.
+
+```mermaid
+
+classDiagram
+  interface Figure {
+    - aire(): float
+    - périmètre(): float
+  }
+  class Cercle implements Figure {
+    - rayon: float
+  }
+  class Carré implements Figure {
+    - côté: float
+  }
+  class Programme {
+    - figure: Figure
+    - calculerAire()
+    - calculerPérimètre()
+  }
+```
+
+Dans cet exemple, l'interface Figure définit deux méthodes, aire() et périmètre(). Les classes Cercle et Carré implémentent l'interface Figure et fournissent des implémentations des méthodes aire() et périmètre(). La classe Programme utilise l'interface Figure pour créer une instance d'un objet Cercle ou d'un objet Carré. La classe Programme appelle ensuite les méthodes aire() et périmètre() sur l'objet Figure.
+
+5. **Interface**
+
+Une interface est une définition d'un ensemble de méthodes. Les interfaces sont utilisées pour définir les comportements d'une classe.
+
+```mermaid
+interface Figure {
+    - aire(): float
+    - périmètre(): float
+  }
+
+```
+Dans cet exemple, l'interface Figure définit deux méthodes, aire() et périmètre(). Les classes qui implémentent l'interface Figure doivent fournir des implémentations des méthodes aire() et périmètre().
+
+**Conclusion**
+Les concepts de POO sont des outils puissants qui peuvent être utilisés pour développer des logiciels plus flexibles, plus extensibles et plus faciles à maintenir
 
 ## Chapitre 4Bis : Les concepts JAVA 
 
