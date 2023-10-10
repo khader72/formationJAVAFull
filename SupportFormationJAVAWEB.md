@@ -6,12 +6,6 @@
 - **Date:** Du Mercredi 11 au Vendredi 13 Octobre 2023
 - **Lieu:** ORANGE
 
-# Formation Java Web
-
-## Date et Lieu
-- **Date:** Du Mercredi 11 au Vendredi 13 Octobre 2023
-- **Lieu:** ORANGE
-
 ## Plan de Formation
 
 | Jour  | Contenu                                                                                    |
