@@ -795,7 +795,6 @@ Dans cet exemple, la classe CompteBancaire a une propriété solde qui est priv�
 L'abstraction est un mécanisme qui permet de regrouper des propriétés et des comportements communs en une seule entité. Cela permet de simplifier la conception et le développement de logiciels.
 
 ```mermaid
-
 classDiagram
   abstract class Figure {
     - aire(): float
@@ -807,7 +806,6 @@ classDiagram
   class Carré extends Figure {
     - côté: float
   }
-  
 ```
 
 Dans cet exemple, la classe Figure est une classe abstraite. Cela signifie que la classe Figure ne peut pas être instanciée. La classe Figure définit deux méthodes abstraites, aire() et périmètre(). Les classes Cercle et Carré héritent de la classe Figure et implémentent les méthodes aire() et périmètre().
@@ -817,7 +815,6 @@ Dans cet exemple, la classe Figure est une classe abstraite. Cela signifie que l
 Le polymorphisme est un mécanisme qui permet à des objets de différents types d'avoir le même comportement. Cela permet de rendre le code plus flexible et plus extensible.
 
 ```mermaid
-
 classDiagram
   interface Figure {
     - aire(): float
@@ -847,7 +844,6 @@ interface Figure {
     - aire(): float
     - périmètre(): float
   }
-
 ```
 Dans cet exemple, l'interface Figure définit deux méthodes, aire() et périmètre(). Les classes qui implémentent l'interface Figure doivent fournir des implémentations des méthodes aire() et périmètre().
 
