@@ -143,7 +143,6 @@ La formation combinera des exposés théoriques et des exercices pratiques. Les 
 
 Les participants seront évalués sur la base de leurs participations aux exercices et à la réalisation du TP.
 
-
 ```
 
 # Formation  Initiation  à  JAVA WEB par la Pratique
@@ -482,6 +481,7 @@ Si une classe n'est toujours pas trouvée, une ClassNotFoundException est levée
           System.out.println("Bonjour le Monde");
       }
   }
+```
 
 Chaque ligne de code que nous écrivons en Java fait partie de quelque chose appelé une Classe. Nous parlerons de Classes plus tard.
 La première ligne définit une classe publique appelée BonjourLeMonde. Tout le code dans une classe est entre { et }.
@@ -504,7 +504,7 @@ Ouvrez l'invite de commande/terminal et allez dans le dossier où se trouve le f
 Exécutez la commande ci-dessous
 
 ```
-javac HelloWorld.java
+  javac HelloWorld.java
 ```
 
 Vous devriez voir deux fichiers HelloWorld.java et HelloWorld.class dans le dossier.
@@ -514,6 +514,7 @@ HelloWorld.class contient le bytecode Java.
 Exécution
 Maintenant, nous pouvons exécuter le programme en utilisant la JVM.
 Exécutez la commande ci-dessous
+
 ```
 java HelloWorld
 ```
