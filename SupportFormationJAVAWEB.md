@@ -477,16 +477,11 @@ Si une classe n'est toujours pas trouvée, une ClassNotFoundException est levée
 **Premier Programme Java**
 
 ```java
-
-public class BonjourLeMonde {
-    public static void main(String[] args) {
-        System.out.println("Bonjour le Monde");
-    }
-}
-
-```
-
-Notes
+  public class BonjourLeMonde {
+      public static void main(String[] args) {
+          System.out.println("Bonjour le Monde");
+      }
+  }
 
 Chaque ligne de code que nous écrivons en Java fait partie de quelque chose appelé une Classe. Nous parlerons de Classes plus tard.
 La première ligne définit une classe publique appelée BonjourLeMonde. Tout le code dans une classe est entre { et }.
