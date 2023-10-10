@@ -6,15 +6,19 @@
 - **Date:** Du Mercredi 11 au Vendredi 13 Octobre 2023
 - **Lieu:** ORANGE
 
+# Formation Java Web
+
+## Date et Lieu
+- **Date:** Du Mercredi 11 au Vendredi 13 Octobre 2023
+- **Lieu:** ORANGE
+
 ## Plan de Formation
 
 | Jour  | Contenu                                                                                    |
 |-------|--------------------------------------------------------------------------------------------|
-| Jour 1| - Introduction à Java<br> - Définition du langage Java<br> - Installation de l'environnement de développement Java<br> - Écriture d'un premier programme Java<br> - Opérateurs en Java<br>   - Opérateurs arithmétiques<br>   - Opérateurs logiques<br>   - Opérateurs de comparaison<br>   - Opérateurs de flux<br>   - Opérateurs de chaîne de caractères<br> - Les bases de la programmation orientée objet<br>   - Classes et objets<br>   - Héritage<br>   - Encapsulation<br>   - Interfaces<br>   - Exceptions<br> |
-| Jour 2| - Collections en Java<br>   - Listes : ArrayList, LinkedList, Vector<br>   - Ensembles (Set) : HashSet, LinkedHashSet, TreeSet<br>   - Maps : HashMap, LinkedHashMap, TreeMap<br> - Entrée/sortie (E/S) en Java<br>   - Lecture et écriture de fichiers texte<br>   - Lecture et écriture de fichiers binaires<br> - Tests unitaires en Java<br>   - Définition des tests unitaires<br>   - Écrire des tests unitaires<br>   - Exécuter des tests unitaires<br> |
-| Jour 3| - Développement d'une application Web simple<br>   - Création de contrôleurs<br>   - Utilisation de Thymeleaf pour les vues<br> - Gestion des données avec Spring Boot<br>   - Utilisation de Spring Data JPA<br>   - Intégration d'une base de données (par exemple, MySQL, H2)<br> - Exercices de consolidation<br>   - Jour 1 : Écrire un programme Java qui calcule le volume d'un cylindre<br>   - Jour 2 : Écrire un test unitaire pour un programme Java qui calcule le volume d'un cylindre<br>   - Jour 3 : Créer une application web Spring Boot simple qui affiche une liste de produits<br> |
-
-
+| Jour 1| - Introduction à Java - Définition du langage Java - Installation de l'environnement de développement Java - Écriture d'un premier programme Java - Opérateurs en Java   - Opérateurs arithmétiques   - Opérateurs logiques   - Opérateurs de comparaison   - Opérateurs de flux   - Opérateurs de chaîne de caractères - Les bases de la programmation orientée objet   - Classes et objets   - Héritage   - Encapsulation   - Interfaces   - Exceptions |
+| Jour 2| - Collections en Java   - Listes : ArrayList, LinkedList, Vector   - Ensembles (Set) : HashSet, LinkedHashSet, TreeSet   - Maps : HashMap, LinkedHashMap, TreeMap - Entrée/sortie (E/S) en Java   - Lecture et écriture de fichiers texte   - Lecture et écriture de fichiers binaires - Tests unitaires en Java   - Définition des tests unitaires   - Écrire des tests unitaires   - Exécuter des tests unitaires |
+| Jour 3| - Développement d'une application Web simple   - Création de contrôleurs   - Utilisation de Thymeleaf pour les vues - Gestion des données avec Spring Boot   - Utilisation de Spring Data JPA   - Intégration d'une base de données (par exemple, MySQL, H2) - Exercices de consolidation   - Jour 1 : Écrire un programme Java qui calcule le volume d'un cylindre   - Jour 2 : Écrire un test unitaire pour un programme Java qui calcule le volume d'un cylindre   - Jour 3 : Créer une application web Spring Boot simple qui affiche une liste de produits |
 
 
 ## Objectifs de la formation
