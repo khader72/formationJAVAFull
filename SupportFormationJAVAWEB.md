@@ -115,11 +115,6 @@ Les participants seront évalués sur la base de leurs participations aux exerci
 * Utilisation de Spring Data JPA
 * Intégration d'une base de données (par exemple, MySQL, H2)
 
-## Exercices de consolidation
-
-* Jour 1 : Écrire un programme Java qui calcule le volume d'un cylindre.
-* Jour 2 : Écrire un test unitaire pour un programme Java qui calcule le volume d'un cylindre.
-* Jour 3 : Créer une application web Spring Boot simple qui affiche une liste de produits.
 
 ## Objectifs de la formation
 
@@ -149,7 +144,7 @@ La formation combinera des exposés théoriques et des exercices pratiques. Les 
 Les participants seront évalués sur la base de leurs participations aux exercices et à la réalisation du TP.
 
 
-
+```
 
 # Formation  Initiation  à  JAVA WEB par la Pratique
 
