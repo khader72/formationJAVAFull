@@ -190,6 +190,50 @@ Multithreadé : Java prend en charge la programmation multithreadée, permettant
 
 ### Mots-Clés Java
 
+
+Java est un langage de programmation orienté objet populaire avec un ensemble spécifique de mots-clés réservés. 
+En Java, il y a un total de **50 mots-clés réservés**. 30 sur 50 sont des indispensables.
+Voici quelques-uns des mots-clés les plus utilisés en Java :
+
+| Mots-Clés | Explication | Exemple |
+| --- | --- | --- |
+| **public** | Déclare un membre d'une classe comme accessible depuis n'importe où. | `public class MyClass { }` |
+| **private** | Déclare un membre d'une classe comme accessible uniquement à l'intérieur de la classe. | `private int myVar;` |
+| **protected** | Déclare un membre d'une classe comme accessible à l'intérieur de la classe et de ses sous-classes. | `protected void myMethod() { }` |
+| **static** | Indique qu'une méthode ou un champ appartient à la classe plutôt qu'à une instance spécifique. | `static int myStaticVar;` |
+| **final** | Indique que la méthode, la classe ou la variable est immuable et ne peut pas être modifiée. | `final double PI = 3.14;` |
+| **abstract** | Indique qu'une classe ou une méthode n'a pas d'implémentation dans le contexte actuel. | `abstract class MyAbstractClass { }` |
+| **interface** | Déclare une interface. | `interface MyInterface { }` |
+| **implements** | Indique qu'une classe implémente une interface. | `class MyClass implements MyInterface { }` |
+| **extends** | Indique qu'une classe hérite d'une autre classe. | `class ChildClass extends ParentClass { }` |
+| **super** | Référence à la classe parente immédiate d'un objet. | `super.myMethod();` |
+| **this** | Référence à l'instance courante de l'objet. | `this.myVar = 10;` |
+| **if** | Conditionnelle (si). | `if (condition) { // code à exécuter }` |
+| **else** | Branche alternative dans une structure conditionnelle. | `if (condition) { // code } else { // code }` |
+| **for** | Boucle for. | `for (int i = 0; i < 10; i++) { // code }` |
+| **while** | Boucle tant que. | `while (condition) { // code }` |
+| **do** | Boucle faire... tant que. | `do { // code } while (condition);` |
+| **switch** | Structure de commutation. | `switch (variable) { case value: // code; break; }` |
+| **case** | Branche d'une structure de commutation. | `case 1: // code; break;` |
+| **break** | Sort de la boucle ou de la structure de commutation. | `break;` |
+| **continue** | Passe à l'itération suivante d'une boucle. | `continue;` |
+| **return** | Renvoie une valeur d'une méthode. | `return result;` |
+| **void** | Indique qu'une méthode ne retourne aucune valeur. | `public void myMethod() { }` |
+| **try** | Démarre un bloc de code à tester pour des exceptions. | `try { // code }` |
+| **catch** | Gère les exceptions attrapées dans un bloc try. | `catch (Exception e) { // gestion de l'exception }` |
+| **throw** | Lance une exception explicite. | `throw new MyException();` |
+| **throws** | Indique qu'une méthode peut lancer certaines exceptions. | `public void myMethod() throws MyException { }` |
+| **finally** | Définit un bloc de code à exécuter après un essai, qu'il y ait eu une exception ou non. | `finally { // code à exécuter }` |
+| **new** | Alloue une nouvelle instance d'une classe. | `MyClass obj = new MyClass();` |
+| **instanceof** | Vérifie si un objet est une instance d'une classe particulière ou d'une interface. | `if (obj instanceof MyClass) { // code }` |
+| **import** | Utilisé pour importer des classes, interfaces, ou paquets. | `import myPackage.MyClass;` |
+| **package** | Déclare un paquetage (package) de classes. | `package myPackage;` |
+
+Cette liste n'est pas exhaustive, mais elle comprend certains des mots-clés les plus couramment utilisés en Java.
+
+---
+
+
 Java, en tant que langage de programmation orienté objet, utilise divers mots-clés pour définir la structure, le comportement et les contrôles dans le code source. Les mots-clés Java peuvent être regroupés en plusieurs catégories selon leur fonction.
 
 ---
@@ -288,7 +332,9 @@ Java, en tant que langage de programmation orienté objet, utilise divers mots-c
 
 
 
-**Syntaxe**
+### Syntaxe
+
+
 
 ```java
 
