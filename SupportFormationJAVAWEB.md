@@ -202,6 +202,17 @@ public class HelloWorld {
 
 Exemples de Code
 Création d'une classe Java simple pour afficher "Hello, world!".
+
+
+| Élément | Syntaxe | Commentaire | Exemple |
+|---------|---------|-------------|---------|
+| Point virgule | `;` | Utilisé pour terminer une instruction en Java. | `int x = 10;` |
+| Parenthèses | `()` | Utilisées pour définir des expressions, des méthodes et des contrôles de flux. | `if (x > 0) { /* code ici */ }` |
+| Accolades | `{ }` | Utilisées pour délimiter les blocs de code dans les structures de contrôle et les méthodes. | `for (int i = 0; i < 10; i++) { /* code ici */ }` |
+| Crochets | `[]` | Utilisés pour déclarer des tableaux en Java. | `int[] numbers = new int[5];` |
+| Opérateur logique ET (`&&`) | `&&` | Utilisé pour effectuer une opération logique ET entre deux expressions. Si les deux expressions sont vraies, l'expression entière est vraie. | `if (x > 0 && y > 0) { /* code ici */ }` |
+
+
 ### Comparaison avec C++ et Autres Langages POO :
 
 Java et C++ sont deux langages de programmation orientés objet, mais ils diffèrent dans plusieurs aspects. Java est plus portable, sécurisé avec son modèle de gestion de la mémoire (pas de pointeurs), et dispose d'une syntaxe plus simple. C++ offre plus de contrôle sur la mémoire, ce qui peut entraîner des erreurs si mal géré, mais offre également des performances potentiellement supérieures.
