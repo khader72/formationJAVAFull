@@ -1,5 +1,47 @@
 # JAVA : Gestion du Clavier : Entrée IN
 
+
+## Gestion des Entrées/Sorties en Java : Focus sur les Entrées Clavier
+
+En programmation Java, la gestion des entrées et sorties (E/S) est une partie essentielle du développement de nombreux types d'applications. Les entrées clavier sont l'une des formes d'interactions les plus courantes entre un utilisateur et un programme. Java propose plusieurs mécanismes pour capturer les entrées clavier, chacun ayant ses avantages et inconvénients.
+
+## System.console() : Lecture Simple des Chaînes de Caractères
+
+Java fournit la méthode `System.console().readLine()` pour lire des chaînes de caractères à partir de la console. C'est une méthode simple et directe pour capturer des entrées clavier, en particulier pour les applications en ligne de commande.
+
+```java
+String nom = System.console().readLine("Entrez votre nom : "); Gestion des Entrées/Sorties en Java : Focus sur les Entrées Clavier
+```
+
+En programmation Java, la gestion des entrées et sorties (E/S) est une partie essentielle du développement de nombreux types d'applications. Les entrées clavier sont l'une des formes d'interactions les plus courantes entre un utilisateur et un programme. Java propose plusieurs mécanismes pour capturer les entrées clavier, chacun ayant ses avantages et inconvénients.
+
+
+Cependant, cette méthode a ses limitations, notamment le fait qu'elle ne fonctionne pas dans tous les environnements, car elle dépend de la présence d'une console système.
+
+## Scanner : Polyvalent et Adaptable
+
+L'utilisation de la classe Scanner offre une solution plus polyvalente pour les entrées clavier. Elle peut lire différents types de données, notamment des chaînes de caractères, des entiers et des réels.
+
+```java
+import java.util.Scanner;
+
+Scanner scanner = new Scanner(System.in);
+String nom = scanner.nextLine();
+int age = scanner.nextInt();
+```
+Bien qu'elle offre une grande flexibilité, elle peut être plus complexe à utiliser, en particulier pour les débutants, car elle nécessite de gérer les conversions de types.
+
+Dans le tableau ci-dessus, nous comparerons Scanner et System.console(), en soulignant leurs avantages, inconvénients et en fournissant des exemples pour aider les programmeurs Java à choisir le mécanisme d'entrée clavier le mieux adapté à leurs besoins.
+
+Pour des cas d'utilisation plus avancés ou des applications graphiques, d'autres méthodes d'entrées/sorties telles que la lecture de fichiers ou les interfaces utilisateur graphiques (GUI) peuvent également être explorées.
+
+## System.console() : Lecture Simple des Chaînes de Caractères
+
+Java fournit la méthode `System.console().readLine()` pour lire des chaînes de caractères à partir de la console. C'est une méthode simple et directe pour capturer des entrées clavier, en particulier pour les applications en ligne de commande.
+
+```java
+String nom = System.console().readLine("Entrez votre nom : ");
+
 ## 1. Lecture d'une chaîne de caractères
 
 ```java
@@ -113,3 +155,18 @@ Nécessite de convertir les données en types Java
 **Conclusion**
 
 System.console est un moyen simple et rapide d'obtenir une entrée clavier. Scanner est un moyen plus polyvalent, mais il nécessite plus de travail pour convertir les données en types Java.
+
+| Critère          | `Scanner`                                                         | `System.console()`                                 |
+| -----------------| ------------------------------------------------------------------ | -------------------------------------------------- |
+| **Avantages**    | Polyvalent, peut lire différents types de données (chaînes, entiers, etc.). | Simple à utiliser pour lire des chaînes de caractères. |
+| **Inconvénients**| Plus complexe à utiliser pour les débutants. Nécessite de convertir les données en types Java appropriés. | Nécessite que l'environnement d'exécution Java dispose d'une console. Ne fonctionne pas sur tous les systèmes d'exploitation. |
+| **Exemple**      | Lecture d'une chaîne de caractères :<br>`Scanner scanner = new Scanner(System.in);`<br>`String chaîne = scanner.nextLine();` | Lecture d'une chaîne de caractères :<br>`String chaîne = System.console().readLine();` |
+
+**Commentaire :**
+
+- **Scanner** est un outil polyvalent pour la lecture des entrées utilisateur. Il peut gérer différents types de données et offre une grande flexibilité. Cependant, il peut être plus complexe à utiliser, surtout pour les débutants, car il nécessite de convertir les données lues en types Java appropriés.
+
+- **System.console()**, d'autre part, est simple à utiliser pour lire des chaînes de caractères. Il peut être préféré pour des cas simples où seule la lecture de chaînes est nécessaire. Cependant, il est important de noter qu'il a ses limitations, notamment le fait qu'il ne fonctionne pas sur tous les systèmes d'exploitation et qu'il ne peut pas lire d'autres types de données que des chaînes.
+
+Ces différences font en sorte que le choix entre `Scanner` et `System.console()` dépend des besoins spécifiques de votre programme et du niveau de complexité que vous souhaitez atteindre.
+
