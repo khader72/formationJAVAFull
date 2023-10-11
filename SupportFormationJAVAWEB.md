@@ -365,6 +365,12 @@ Création d'une classe Java simple pour afficher "Hello, world!".
 | Opérateurs de concaténation | `+` | Concatène deux chaînes de caractères. | `String fullName = firstName + " " + lastName;` |
 | Opérateurs ternaires | `? :` | Opérateur conditionnel, retourne une valeur en fonction d'une condition. | `int max = (x > y) ? x : y;` |
 
+Pour **les commentaires en JAVA**:
+
+| Type de Commentaire    | Syntaxe                            | Exemple                              |
+|------------------------|-----------------------------------|--------------------------------------|
+| Commentaires sur une ligne | `// Votre commentaire ici` | `int age = 30; // Définit l'âge`  |
+| Commentaires sur plusieurs lignes | `/* Début de commentaire` <br> `   Plusieurs lignes de commentaire` <br> `   Fin du commentaire */` | 
 
 
 ### Comparaison avec C++ et Autres Langages POO :
