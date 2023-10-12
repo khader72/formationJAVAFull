@@ -54,7 +54,7 @@ Un objet est une instance d'une classe.
 Exemple de code
 
 ```Java
-public class Main {
+public class Programme {
 
     public static void main(String[] args) {
 
