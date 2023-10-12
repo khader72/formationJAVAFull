@@ -6,7 +6,7 @@ Une classe est un modèle qui définit les propriétés et les comportements d'u
 
 Exemple de code
 
-Java
+```Java
 public class Employe {
 
     // Propriétés
@@ -27,7 +27,7 @@ public class Employe {
     }
 
 }
-
+```
 
 **Commentaires et explications**
 
