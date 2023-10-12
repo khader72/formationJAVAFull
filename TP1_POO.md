@@ -167,7 +167,7 @@ Le polymorphisme est la capacité d'une variable d'une classe mère à référen
 
 Exemple de code
 
-Java
+```Java
 public class Employe {
 
     // Propriétés
@@ -228,7 +228,7 @@ public class Main {
     }
 
 }
-
+```
 
 Commentaires et explications
 
@@ -249,7 +249,7 @@ L'encapsulation est la pratique de cacher les détails d'une classe aux utilisat
 
 Exemple de code
 
-Java
+```Java
 public class Employe {
 
     // Propriétés privées
@@ -290,7 +290,8 @@ public class Employe {
     }
 
 }
-Utilisez le code avec précaution. En savoir plus
+```
+
 Commentaires et explications
 
 Les propriétés nom, age et salaire sont déclarées privées.
@@ -307,7 +308,7 @@ L'abstraction est le processus de masquage des détails d'une classe aux utilisa
 
 Exemple de code
 
-Java
+```Java
 public abstract class Vehicule {
 
     // Propriétés
@@ -374,7 +375,8 @@ public class Moto extends Vehicule {
     }
 
 }
-Utilisez le code avec précaution. En savoir plus
+```
+
 Commentaires et explications
 
 La classe Vehicule est une classe abstraite.
@@ -396,7 +398,7 @@ La composition est une relation entre deux classes où une classe, la classe com
 
 Exemple de code
 
-Java
+```Java
 public class Voiture {
 
     // Propriétés
@@ -435,7 +437,9 @@ public class Moteur {
     }
 
 }
-Utilisez le code avec précaution. En savoir plus
+```
+
+
 Commentaires et explications
 
 La classe Voiture contient une référence à la classe Moteur.
@@ -452,7 +456,7 @@ L'agrégation est une relation entre deux classes où une classe, la classe agr�
 
 Exemple de code
 
-Java
+```Java
 public class Voiture {
 
     // Propriétés
@@ -511,7 +515,7 @@ Une interface est une définition d'un ensemble de méthodes.
 
 Exemple de code
 
-Java
+```Java
 public interface Vehicule {
 
     void rouler();
@@ -569,7 +573,9 @@ public class Moto implements Vehicule {
     }
 
 }
-Utilisez le code avec précaution. En savoir plus
+
+```
+
 Commentaires et explications
 
 L'interface Vehicule définit les méthodes rouler() et freiner().
@@ -590,6 +596,7 @@ Un package est un regroupement de classes et d'interfaces.
 
 Exemple de code
 
+```java
 package vehicules;
 
 public class Voiture {
@@ -639,6 +646,8 @@ public class Moto implements Vehicule {
     }
 
 }
+```
+
 Commentaires et explications
 
 Le package vehicules contient les classes Voiture et Moto.
@@ -658,6 +667,7 @@ L'importation de packages permet d'utiliser les classes et interfaces d'un autre
 
 Exemple de code
 
+```java
 package application;
 
 import vehicules.Voiture;
@@ -676,6 +686,8 @@ public class Main {
     }
 
 }
+```
+
 Noms de packages
 Les noms de packages doivent être uniques et ne doivent pas contenir de caractères spéciaux.
 
@@ -684,6 +696,7 @@ Les packages peuvent être organisés en sous-packages.
 
 Exemple de code
 
+```
 package vehicules;
 
 public class Voiture {
@@ -731,6 +744,8 @@ public class Moteur {
     }
 
 }
+```
+
 Conclusion
 
 Les packages sont un concept important de la programmation orientée objet. Ils permettent d'organiser le code et de réduire les conflits de noms.
